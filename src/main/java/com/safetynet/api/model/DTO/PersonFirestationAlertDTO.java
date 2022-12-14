@@ -1,5 +1,8 @@
 package com.safetynet.api.model.DTO;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PersonFirestationAlertDTO {
 
     private String firstName;

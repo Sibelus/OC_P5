@@ -1,7 +1,10 @@
 package com.safetynet.api.model.DTO;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 
+@Component
 public class ListPersonsFirestationAlertDTO {
 
     private int children;
