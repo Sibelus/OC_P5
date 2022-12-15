@@ -1,22 +1,16 @@
 package com.safetynet.api.service;
 
-import java.util.ArrayList;
-import java.util.Objects;
-
-import com.fasterxml.jackson.databind.ser.FilterProvider;
-import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
-import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
-import com.safetynet.api.controller.FirestationAlertController;
 import com.safetynet.api.model.DTO.ListPersonsFirestationAlertDTO;
 import com.safetynet.api.model.DTO.PersonFirestationAlertDTO;
+import com.safetynet.api.model.Person;
 import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Service;
 
-import com.safetynet.api.model.Person;
+import java.util.ArrayList;
+import java.util.Objects;
 
 
 
@@ -31,9 +25,11 @@ public class FirestationAlertService {
     private PersonFirestationAlertDTO personFirestationAlertDTO;
     @Autowired
     private ListPersonsFirestationAlertDTO firestationAlertList;
+    @Autowired
+    PersonRepository personRepository;
 
     public ListPersonsFirestationAlertDTO getFirestationAlert(int firestationNumber){
-        ArrayList<Person> allPersons = PersonRepository.getPersonsAggregatedData();
+        ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
         ArrayList<PersonFirestationAlertDTO> selectedPersons = new ArrayList<>();
 
         int adults = 0;
