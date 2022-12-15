@@ -16,24 +16,34 @@ public class PersonService {
     private static final Logger logger = LogManager.getLogger(PersonService.class);
 
     public int calculateAge(Person person){
-        int age = 0;
+        int age;
         String birthdate = person.getBirthdate();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         long todayMillis = System.currentTimeMillis();
 
+        if(birthdate == null || birthdate.equals("")){
+            logger.error("Birthdate provided is null or empty");
+            throw new IllegalArgumentException("Birthdate provided is incorrect: " + birthdate);
+        }
+
         try {
             Date parseBirthdate = sdf.parse(birthdate);
-            long dateMillis = parseBirthdate.getTime();
-            long durationMillis = todayMillis - dateMillis;
+            long birthdateMillis = parseBirthdate.getTime();
+
+            if(birthdateMillis > todayMillis){
+                logger.error("Birthdate provided is in the future");
+                throw new IllegalArgumentException("Birthdate can't be ulterior of today: " + birthdate);
+            }
+
+            long durationMillis = todayMillis - birthdateMillis;
             TimeUnit time = TimeUnit.DAYS;
             long ageInDays = time.convert(durationMillis, TimeUnit.MILLISECONDS);
             age = (int) ageInDays/365;
             logger.debug("Person was born {} and her age is {}", parseBirthdate, age);
         } catch (ParseException e) {
-            logger.error("Error calculating age, {}", e);
+            logger.error("Error parsing age", e);
             throw new RuntimeException(e);
         }
-
         return age;
     }
 
@@ -41,6 +51,9 @@ public class PersonService {
         boolean adult = false;
         if(age > 18){
             adult = true;
+            logger.debug("This person is an adult");
+        } else {
+            logger.debug("This person is a child");
         }
         return adult;
     }
