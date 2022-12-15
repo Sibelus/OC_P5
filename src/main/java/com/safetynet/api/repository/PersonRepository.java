@@ -14,7 +14,7 @@ import java.util.ArrayList;
 @Repository
 public class PersonRepository {
 
-    public static ArrayList<Person> getPersonsAggregatedData() {
+    public ArrayList<Person> getPersonsAggregatedData() {
 
 
         ObjectMapper objectMapper = new ObjectMapper();
