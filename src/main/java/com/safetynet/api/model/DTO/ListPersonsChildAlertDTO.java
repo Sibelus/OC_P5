@@ -7,23 +7,24 @@ import java.util.ArrayList;
 @Component
 public class ListPersonsChildAlertDTO {
 
-    private ArrayList<PersonChildAlertDTO> childrenAndTheirFamilly;
+    private ArrayList<PersonChildAlertDTO> childrenAndTheirFamily;
 
 
     @Override
     public String toString() {
-        return "listChildAlertDTO{" +
-                "childrenAndTheirFamilly=" + childrenAndTheirFamilly +
+        return "ListPersonsChildAlertDTO{" +
+                "childrenAndTheirFamily=" + childrenAndTheirFamily +
                 '}';
     }
 
 
     //Getters & setters
-    public ArrayList<PersonChildAlertDTO> getChildrenAndTheirFamilly() {
-        return childrenAndTheirFamilly;
+
+    public ArrayList<PersonChildAlertDTO> getChildrenAndTheirFamily() {
+        return childrenAndTheirFamily;
     }
 
-    public void setChildrenAndTheirFamilly(ArrayList<PersonChildAlertDTO> childrenAndTheirFamilly) {
-        this.childrenAndTheirFamilly = childrenAndTheirFamilly;
+    public void setChildrenAndTheirFamily(ArrayList<PersonChildAlertDTO> childrenAndTheirFamily) {
+        this.childrenAndTheirFamily = childrenAndTheirFamily;
     }
 }

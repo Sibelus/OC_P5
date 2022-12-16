@@ -8,38 +8,38 @@ import java.util.ArrayList;
 @Component
 public class PersonChildAlertDTO {
 
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     private int age;
-    private ArrayList<PersonChildAlertDTO> otherFamillyMembers;
+    private ArrayList<PersonChildAlertDTO> otherFamilyMembers;
 
 
     @Override
     public String toString() {
         return "ChildAlertDTO{" +
-                "firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
+                "firstname='" + firstName + '\'' +
+                ", lastname='" + lastName + '\'' +
                 ", age=" + age +
-                ", famillyMembers=" + otherFamillyMembers +
+                ", familyMembers=" + otherFamilyMembers +
                 '}';
     }
 
 
     //Getters & setters
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstname) {
+        this.firstName = firstname;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastname) {
+        this.lastName = lastname;
     }
 
     public int getAge() {
@@ -51,10 +51,10 @@ public class PersonChildAlertDTO {
     }
 
     public ArrayList<PersonChildAlertDTO> getOtherFamillyMembers() {
-        return otherFamillyMembers;
+        return otherFamilyMembers;
     }
 
     public void setOtherFamillyMembers(ArrayList<PersonChildAlertDTO> famillyMembers) {
-        this.otherFamillyMembers = famillyMembers;
+        this.otherFamilyMembers = famillyMembers;
     }
 }

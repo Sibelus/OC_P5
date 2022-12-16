@@ -32,14 +32,14 @@ public class ChildAlertService {
 
         for(PersonChildAlertDTO child : childrenList){
             ArrayList<PersonChildAlertDTO> familyMember = getResident(address);
-            ArrayList<PersonChildAlertDTO> otherfamilyMember = new ArrayList<>();
+            ArrayList<PersonChildAlertDTO> otherFamilyMember = new ArrayList<>();
 
             for(PersonChildAlertDTO p : familyMember){
-                if(!Objects.equals(p.getFirstname(), child.getFirstname())){
-                    otherfamilyMember.add(p);
+                if(!Objects.equals(p.getFirstName(), child.getFirstName())){
+                    otherFamilyMember.add(p);
                 }
             }
-            child.setOtherFamillyMembers(otherfamilyMember);
+            child.setOtherFamillyMembers(otherFamilyMember);
         }
 
         /*
@@ -49,7 +49,7 @@ public class ChildAlertService {
             child.setOtherFamillyMembers(familyMember);
         }*/
 
-        listPersonsChildAlertDTO.setChildrenAndTheirFamilly(childrenList);
+        listPersonsChildAlertDTO.setChildrenAndTheirFamily(childrenList);
         return listPersonsChildAlertDTO;
     }
 
@@ -66,10 +66,11 @@ public class ChildAlertService {
             }
             if(Objects.equals(person.getAddress(), address)){
                 PersonChildAlertDTO personChildAlertDTO = new PersonChildAlertDTO();
-                personChildAlertDTO.setFirstname(person.getFirstName());
-                personChildAlertDTO.setLastname(person.getLastName());
+                personChildAlertDTO.setFirstName(person.getFirstName());
+                personChildAlertDTO.setLastName(person.getLastName());
                 personChildAlertDTO.setAge(personService.calculateAge(person));
                 selectedPersons.add(personChildAlertDTO);
+                logger.debug("{} {} live at {}", personChildAlertDTO.getFirstName(), personChildAlertDTO.getLastName(), address);
             }
         }
         return selectedPersons;
@@ -77,12 +78,12 @@ public class ChildAlertService {
 
     private ArrayList<PersonChildAlertDTO> getChildrenList(ArrayList<PersonChildAlertDTO> persons){
         ArrayList<PersonChildAlertDTO> childrenList = new ArrayList<>();
-        ArrayList<PersonChildAlertDTO> allResident = persons;
 
         //Select children
-        for(PersonChildAlertDTO child : allResident){
+        for(PersonChildAlertDTO child : persons){
             if(!personService.isAnAdult(child.getAge())){
                 childrenList.add(child);
+                logger.debug("{} {} added to childrenList", child.getFirstName(), child.getLastName());
             }
         }
         return childrenList;

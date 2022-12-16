@@ -22,11 +22,9 @@ public class FirestationAlertService {
     @Autowired
     private PersonService personService;
     @Autowired
-    private PersonFirestationAlertDTO personFirestationAlertDTO;
-    @Autowired
     private ListPersonsFirestationAlertDTO firestationAlertList;
     @Autowired
-    PersonRepository personRepository;
+    private PersonRepository personRepository;
 
     public ListPersonsFirestationAlertDTO getFirestationAlert(int firestationNumber){
         ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
@@ -38,6 +36,7 @@ public class FirestationAlertService {
         for(Person person : allPersons){
             logger.debug("{} {} depends of firestation number {}",person.getFirstName(), person.getLastName(), person.getStation());
             if(Objects.equals(person.getStation(), firestationNumber)){
+                PersonFirestationAlertDTO personFirestationAlertDTO = new PersonFirestationAlertDTO();
                 personFirestationAlertDTO.setFirstName(person.getFirstName());
                 personFirestationAlertDTO.setLastName(person.getLastName());
                 personFirestationAlertDTO.setAddress(person.getAddress());
