@@ -22,6 +22,13 @@ public class AlertControllerIT {
     public void integrationTest_GetFirestationAlert() throws Exception{
         mockMvc.perform(get("/FirestationAlert/1"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.persons[0].firstName", is("Kendrik")));
+                .andExpect(jsonPath("$.persons[0].firstName", is("Peter")));
+    }
+
+    @Test
+    public void integrationTest_GetChildAlert() throws Exception{
+        mockMvc.perform(get("/ChildAlert/1509 Culver St"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.childrenAndTheirFamily[0].firstName", is("Tenley")));
     }
 }
