@@ -1,6 +1,5 @@
 package com.safetynet.api.model.DTO;
 
-import com.safetynet.api.model.Person;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -17,8 +16,8 @@ public class PersonChildAlertDTO {
     @Override
     public String toString() {
         return "ChildAlertDTO{" +
-                "firstname='" + firstName + '\'' +
-                ", lastname='" + lastName + '\'' +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", familyMembers=" + otherFamilyMembers +
                 '}';

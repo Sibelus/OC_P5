@@ -12,14 +12,11 @@ public class ListPersonsChildAlertDTO {
 
     @Override
     public String toString() {
-        return "ListPersonsChildAlertDTO{" +
-                "childrenAndTheirFamily=" + childrenAndTheirFamily +
-                '}';
+        return "{" + "childrenAndTheirFamily=" + childrenAndTheirFamily + '}';
     }
 
 
     //Getters & setters
-
     public ArrayList<PersonChildAlertDTO> getChildrenAndTheirFamily() {
         return childrenAndTheirFamily;
     }

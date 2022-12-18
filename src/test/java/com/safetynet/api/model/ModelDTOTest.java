@@ -1,6 +1,8 @@
 package com.safetynet.api.model;
 
+import com.safetynet.api.model.DTO.ListPersonsChildAlertDTO;
 import com.safetynet.api.model.DTO.ListPersonsFirestationAlertDTO;
+import com.safetynet.api.model.DTO.PersonChildAlertDTO;
 import com.safetynet.api.model.DTO.PersonFirestationAlertDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -64,5 +66,50 @@ public class ModelDTOTest {
         Assertions.assertEquals(listPersonsFirestationAlertDTO.getAdults(), adults);
         Assertions.assertEquals(listPersonsFirestationAlertDTO.getPersons(), persons);
         Assertions.assertEquals(listPersonsFirestationAlertDTO.toString(), listPersonsFirestationAlertDTOToString);
+    }
+
+    @Test
+    public void testPersonChlidAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        PersonChildAlertDTO personChildAlertDTO = new PersonChildAlertDTO();
+        String firstName = "Hannah";
+        String lastName = "Konda";
+        int age = 18;
+        ArrayList<PersonChildAlertDTO> otherFamilyMembers = new ArrayList<>();
+
+        String personChildAlertDTOToString = "ChildAlertDTO{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", familyMembers=" + otherFamilyMembers +
+                '}';
+
+        //WHEN
+        personChildAlertDTO.setFirstName(firstName);
+        personChildAlertDTO.setLastName(lastName);
+        personChildAlertDTO.setAge(age);
+        personChildAlertDTO.setOtherFamillyMembers(otherFamilyMembers);
+
+        //THEN
+        Assertions.assertEquals(personChildAlertDTO.getFirstName(), firstName);
+        Assertions.assertEquals(personChildAlertDTO.getLastName(), lastName);
+        Assertions.assertEquals(personChildAlertDTO.getAge(), age);
+        Assertions.assertEquals(personChildAlertDTO.getOtherFamillyMembers(), otherFamilyMembers);
+        Assertions.assertEquals(personChildAlertDTO.toString(), personChildAlertDTOToString);
+    }
+
+    @Test
+    public void testListPersChildAlertDETO_SetAndGetAllInfos(){
+        //GIVEN
+        ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
+        ArrayList<PersonChildAlertDTO> childrenAndTheirFamily = new ArrayList<>();
+        String listPersonChildAlertDTOToString = "{" + "childrenAndTheirFamily=" + childrenAndTheirFamily + '}';
+
+        //WHEN
+        listPersonsChildAlertDTO.setChildrenAndTheirFamily(childrenAndTheirFamily);
+
+        //THEN
+        Assertions.assertEquals(listPersonsChildAlertDTO.getChildrenAndTheirFamily(), childrenAndTheirFamily);
+        Assertions.assertEquals(listPersonsChildAlertDTO.toString(), listPersonChildAlertDTOToString);
     }
 }
