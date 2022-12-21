@@ -1,9 +1,6 @@
 package com.safetynet.api.model;
 
-import com.safetynet.api.model.DTO.ListPersonsChildAlertDTO;
-import com.safetynet.api.model.DTO.ListPersonsFirestationAlertDTO;
-import com.safetynet.api.model.DTO.PersonChildAlertDTO;
-import com.safetynet.api.model.DTO.PersonFirestationAlertDTO;
+import com.safetynet.api.model.DTO.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -99,7 +96,7 @@ public class ModelDTOTest {
     }
 
     @Test
-    public void testListPersChildAlertDETO_SetAndGetAllInfos(){
+    public void testListPersChildAlertDTO_SetAndGetAllInfos(){
         //GIVEN
         ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
         ArrayList<PersonChildAlertDTO> childrenAndTheirFamily = new ArrayList<>();
@@ -111,5 +108,35 @@ public class ModelDTOTest {
         //THEN
         Assertions.assertEquals(listPersonsChildAlertDTO.getChildrenAndTheirFamily(), childrenAndTheirFamily);
         Assertions.assertEquals(listPersonsChildAlertDTO.toString(), listPersonChildAlertDTOToString);
+    }
+
+    @Test
+    public void testPersonPhoneAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        PersonPhoneAlertDTO personPhoneAlertDTO = new PersonPhoneAlertDTO();
+        String phone = ("123-456-789");
+        String personPhoneLAlertDTOToString = "{" + "phone='" + phone + '\'' + '}';
+
+        //WHEN
+        personPhoneAlertDTO.setPhone(phone);
+
+        //THEN
+        Assertions.assertEquals(phone, personPhoneAlertDTO.getPhone());
+        Assertions.assertEquals(personPhoneLAlertDTOToString, personPhoneAlertDTO.toString());
+    }
+
+    @Test
+    public void testListPersonsPhoneAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        ListePersonsPhoneAlertDTO listePersonsPhoneAlertDTO = new ListePersonsPhoneAlertDTO();
+        ArrayList<PersonPhoneAlertDTO> phoneAlertList = new ArrayList<>();
+        String listPersonsPhoneAlertDTOToString = "{" + "phoneAlertList=" + phoneAlertList + '}';
+
+        //WHEN
+        listePersonsPhoneAlertDTO.setPhoneAlertList(phoneAlertList);
+
+        //THEN
+        Assertions.assertEquals(phoneAlertList, listePersonsPhoneAlertDTO.getPhoneAlertList());
+        Assertions.assertEquals(listPersonsPhoneAlertDTOToString, listePersonsPhoneAlertDTO.toString());
     }
 }
