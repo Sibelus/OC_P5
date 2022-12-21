@@ -22,8 +22,6 @@ public class FirestationAlertService {
     @Autowired
     private PersonService personService;
     @Autowired
-    private ListPersonsFirestationAlertDTO firestationAlertList;
-    @Autowired
     private PersonRepository personRepository;
 
     public ListPersonsFirestationAlertDTO getFirestationAlert(int firestationNumber){
@@ -55,6 +53,7 @@ public class FirestationAlertService {
             }
         }
 
+        ListPersonsFirestationAlertDTO firestationAlertList = new ListPersonsFirestationAlertDTO();
         firestationAlertList.setChildren(children);
         firestationAlertList.setAdults(adults);
         firestationAlertList.setPersons(selectedPersons);

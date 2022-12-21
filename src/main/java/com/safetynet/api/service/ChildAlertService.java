@@ -18,12 +18,11 @@ public class ChildAlertService {
     private static final Logger logger = LogManager.getLogger(FirestationAlertService.class);
 
     @Autowired
-    PersonRepository personRepository;
+    private PersonRepository personRepository;
     @Autowired
-    PersonService personService;
+    private PersonService personService;
 
     public ListPersonsChildAlertDTO getChildAlert(String address){
-
 
         ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
 
@@ -32,22 +31,9 @@ public class ChildAlertService {
 
         for(PersonChildAlertDTO child : childrenList){
             ArrayList<PersonChildAlertDTO> familyMember = getResident(address);
-            ArrayList<PersonChildAlertDTO> otherFamilyMember = new ArrayList<>();
-
-            for(PersonChildAlertDTO p : familyMember){
-                if(!Objects.equals(p.getFirstName(), child.getFirstName())){
-                    otherFamilyMember.add(p);
-                }
-            }
-            child.setOtherFamillyMembers(otherFamilyMember);
-        }
-
-        /*
-        for(PersonChildAlertDTO child : childrenList){
-            ArrayList<PersonChildAlertDTO> familyMember = getResident(address);
             familyMember.remove(child);
             child.setOtherFamillyMembers(familyMember);
-        }*/
+        }
 
         listPersonsChildAlertDTO.setChildrenAndTheirFamily(childrenList);
         return listPersonsChildAlertDTO;

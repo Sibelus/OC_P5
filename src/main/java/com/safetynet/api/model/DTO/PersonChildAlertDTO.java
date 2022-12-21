@@ -3,6 +3,7 @@ package com.safetynet.api.model.DTO;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 @Component
 public class PersonChildAlertDTO {
@@ -55,5 +56,18 @@ public class PersonChildAlertDTO {
 
     public void setOtherFamillyMembers(ArrayList<PersonChildAlertDTO> famillyMembers) {
         this.otherFamilyMembers = famillyMembers;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PersonChildAlertDTO that = (PersonChildAlertDTO) o;
+        return firstName.equals(that.firstName) && lastName.equals(that.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName);
     }
 }
