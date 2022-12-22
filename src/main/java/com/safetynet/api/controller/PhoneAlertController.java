@@ -17,7 +17,7 @@ public class PhoneAlertController {
     @Autowired
     private PhoneAlertService phoneAlertService;
 
-    @GetMapping("/PhoneAlert/{firestationNumber}")
+    @GetMapping("/phoneAlert/{firestationNumber}")
     public ListePersonsPhoneAlertDTO phoneAlert(@PathVariable int firestationNumber){
         logger.info("Request phone numbers for firestation number {}", firestationNumber);
         ListePersonsPhoneAlertDTO alert = phoneAlertService.getPhoneAlert(firestationNumber);

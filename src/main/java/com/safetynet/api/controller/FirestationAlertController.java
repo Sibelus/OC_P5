@@ -17,7 +17,7 @@ public class FirestationAlertController {
     @Autowired
     private FirestationAlertService firestationAlertService;
 
-    @GetMapping("/FirestationAlert/{firestationNumber}")
+    @GetMapping("/firestation/{firestationNumber}")
     public ListPersonsFirestationAlertDTO firestationAlert(@PathVariable int firestationNumber){
         logger.info("Request alert infos for firestation number {}", firestationNumber);
         ListPersonsFirestationAlertDTO alert = firestationAlertService.getFirestationAlert(firestationNumber);

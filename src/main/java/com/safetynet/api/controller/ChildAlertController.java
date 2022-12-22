@@ -19,21 +19,8 @@ public class ChildAlertController {
 
     @Autowired
     ChildAlertService childAlertService;
-    //private ArrayList<String> stringWithSpace;
 
-    /*
-    @GetMapping("/ChildAlert")
-    public String childAlert(){
-        logger.info("Request alert infos for children living at ");
-
-        //URL url= new URL(stringWithSpace.replaceAll(" ","%20"));
-        //ListPersonsChildAlertDTO alert = childAlertService.getChildAlert(address);
-        logger.info("Return alert");
-        return "alert";
-    }*/
-
-
-    @GetMapping("/ChildAlert/{address}")
+    @GetMapping("/childAlert/{address}")
     public ListPersonsChildAlertDTO childAlert(@PathVariable String address){
         logger.info("Request alert infos for children living at {}", address);
 
