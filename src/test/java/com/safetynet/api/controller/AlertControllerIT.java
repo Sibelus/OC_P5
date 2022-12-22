@@ -20,15 +20,30 @@ public class AlertControllerIT {
 
     @Test
     public void integrationTest_GetFirestationAlert() throws Exception{
-        mockMvc.perform(get("/FirestationAlert/1"))
+        mockMvc.perform(get("/firestation/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.persons[0].firstName", is("Peter")));
     }
 
     @Test
     public void integrationTest_GetChildAlert() throws Exception{
-        mockMvc.perform(get("/ChildAlert/1509 Culver St"))
+        mockMvc.perform(get("/childAlert/1509 Culver St"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.childrenAndTheirFamily[0].firstName", is("Tenley")));
+    }
+
+    @Test
+    public void integrationTest_GetPhoneALert() throws Exception{
+        mockMvc.perform(get("/phoneAlert/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.phoneAlertList[0].phone", is("841-874-6512")));
+    }
+
+    @Test
+    public void integrationTest_GetFireALert() throws Exception{
+        mockMvc.perform(get("/fire/1509 Culver St"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.firestationNumber", is(3)))
+                .andExpect(jsonPath("$.persons[0].lastName", is("Boyd")));
     }
 }

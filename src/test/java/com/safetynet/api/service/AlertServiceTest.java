@@ -25,6 +25,8 @@ public class AlertServiceTest {
     private ChildAlertService childAlertService;
     @Autowired
     private PhoneAlertService phoneAlertService;
+    @Autowired
+    private FireAlertService fireAlertService;
 
 
     @Test
@@ -112,5 +114,32 @@ public class AlertServiceTest {
 
         //THEN
         Assertions.assertEquals("123-456-789", personPhoneAlertDTO.getPhone());
+    }
+
+    @Test
+    public void testGetFireAlert(){
+        //GIVEN
+        Person person = new Person();
+        person.setLastName("Herbert");
+        person.setPhone("123-456-789");
+        person.setAddress("31 jump street");
+        person.setBirthdate("12/12/2012");
+        person.setStation(1);
+        person.setMedications(new String[]{"Penny", "Ciline"});
+        person.setAllergies(new String[]{"kindness"});
+
+        ArrayList<Person> allPersons = new ArrayList<>();
+        allPersons.add(person);
+        when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
+
+        //WHEN
+        ListPersonsFireAlertDTO listPersonsFireAlertDTO = fireAlertService.getFireAlert("31 jump street");
+        ArrayList<PersonFireALertDTO> selectedPersons = listPersonsFireAlertDTO.getPersons();
+        PersonFireALertDTO personFireALertDTO = selectedPersons.get(0);
+        int firestationNumber = listPersonsFireAlertDTO.getFirestationNumber();
+
+        //THEN
+        Assertions.assertEquals(1, firestationNumber);
+        Assertions.assertEquals("Herbert", personFireALertDTO.getLastName());
     }
 }

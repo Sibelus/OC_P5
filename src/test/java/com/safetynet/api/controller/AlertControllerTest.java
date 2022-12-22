@@ -1,6 +1,7 @@
 package com.safetynet.api.controller;
 
 import com.safetynet.api.service.ChildAlertService;
+import com.safetynet.api.service.FireAlertService;
 import com.safetynet.api.service.FirestationAlertService;
 import com.safetynet.api.service.PhoneAlertService;
 import org.junit.jupiter.api.Test;
@@ -13,7 +14,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(controllers = {FirestationAlertController.class, ChildAlertController.class, PhoneAlertController.class})
+@WebMvcTest(controllers = {FirestationAlertController.class,
+        ChildAlertController.class,
+        PhoneAlertController.class,
+        FireAlertController.class})
 public class AlertControllerTest {
 
     @Autowired
@@ -25,23 +29,31 @@ public class AlertControllerTest {
     private ChildAlertService childAlertService;
     @MockBean
     private PhoneAlertService phoneAlertService;
+    @MockBean
+    private FireAlertService fireAlertService;
 
 
     @Test
     public void testGetFirestationAlert() throws Exception {
-        mockMvc.perform(get("/FirestationAlert/1"))
+        mockMvc.perform(get("/firestation/1"))
                 .andExpect(status().isOk());
     }
 
     @Test
     public void testGetChildAlert() throws Exception{
-        mockMvc.perform(get("/ChildAlert/1509 Culver St"))
+        mockMvc.perform(get("/childAlert/1509 Culver St"))
                 .andExpect(status().isOk());
     }
 
     @Test
     public void testGetPhoneAlert() throws Exception{
-        mockMvc.perform(get("/PhoneAlert/1"))
+        mockMvc.perform(get("/phoneAlert/1"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void testGetFireAlert() throws Exception{
+        mockMvc.perform(get("/fire/1509 Culver St"))
                 .andExpect(status().isOk());
     }
 }

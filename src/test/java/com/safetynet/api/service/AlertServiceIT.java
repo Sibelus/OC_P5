@@ -14,6 +14,8 @@ public class AlertServiceIT {
     private ChildAlertService childAlertService;
     @Autowired
     private PhoneAlertService phoneAlertService;
+    @Autowired
+    private FireAlertService fireAlertService;
 
 
     @Test
@@ -40,6 +42,15 @@ public class AlertServiceIT {
         phoneAlertService.getPhoneAlert(1);
 
         //THEN
-        Assertions.assertNotNull(childAlertService);
+        Assertions.assertNotNull(phoneAlertService);
+    }
+
+    @Test
+    public void integrationTest_GetFireAlert(){
+        //WHEN
+        fireAlertService.getFireAlert("1509 Culver St");
+
+        //THEN
+        Assertions.assertNotNull(fireAlertService);
     }
 }

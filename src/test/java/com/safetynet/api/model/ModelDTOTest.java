@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ModelDTOTest {
 
@@ -138,5 +139,59 @@ public class ModelDTOTest {
         //THEN
         Assertions.assertEquals(phoneAlertList, listePersonsPhoneAlertDTO.getPhoneAlertList());
         Assertions.assertEquals(listPersonsPhoneAlertDTOToString, listePersonsPhoneAlertDTO.toString());
+    }
+
+    @Test
+    public void testPersonFireALertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        PersonFireALertDTO personFireALertDTO = new PersonFireALertDTO();
+        String lastName = "Herbert";
+        String phone = "123-456-789";
+        int age = 10;
+        String[] medications = {"Penny", "Ciline"};
+        String[] allergies = {"Kindness"};
+        String personFireAlertDTOToString = "PersonFireALertDTO{" +
+                "lastName='" + lastName + '\'' +
+                ", phone='" + phone + '\'' +
+                ", age=" + age +
+                ", medications=" + Arrays.toString(medications) +
+                ", allergies=" + Arrays.toString(allergies) +
+                '}';
+
+        //WHEN
+        personFireALertDTO.setLastName(lastName);
+        personFireALertDTO.setPhone(phone);
+        personFireALertDTO.setAge(age);
+        personFireALertDTO.setMedications(medications);
+        personFireALertDTO.setAllergies(allergies);
+
+        //THEN
+        Assertions.assertEquals(lastName, personFireALertDTO.getLastName());
+        Assertions.assertEquals(phone, personFireALertDTO.getPhone());
+        Assertions.assertEquals(age, personFireALertDTO.getAge());
+        Assertions.assertEquals(medications, personFireALertDTO.getMedications());
+        Assertions.assertEquals(allergies, personFireALertDTO.getAllergies());
+        Assertions.assertEquals(personFireAlertDTOToString, personFireALertDTO.toString());
+    }
+
+    @Test
+    public void testListPersonsFireAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        ListPersonsFireAlertDTO listPersonsFireAlertDTO = new ListPersonsFireAlertDTO();
+        ArrayList<PersonFireALertDTO> fireAlertList = new ArrayList<>();
+        int firestationNumber = 1;
+        String listPersonsFireALertDTOToString = "ListPersonsFireAlertDTO{" +
+                "firestationNumber=" + firestationNumber +
+                ", persons=" + fireAlertList +
+                '}';
+
+        //WHEN
+        listPersonsFireAlertDTO.setFirestationNumber(firestationNumber);
+        listPersonsFireAlertDTO.setPersons(fireAlertList);
+
+        //THEN
+        Assertions.assertEquals(firestationNumber, listPersonsFireAlertDTO.getFirestationNumber());
+        Assertions.assertEquals(fireAlertList, listPersonsFireAlertDTO.getPersons());
+        Assertions.assertEquals(listPersonsFireALertDTOToString, listPersonsFireAlertDTO.toString());
     }
 }
