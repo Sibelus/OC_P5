@@ -35,11 +35,11 @@ public class PersonInfoAlertService {
                 logger.error("Lastname provided is null or empty");
                 throw new IllegalArgumentException("Lastname provided is incorrect: " + lastName);
             }
-            if(person.getFirstName().equals(firstName) && person.getLastName().equals(lastName)){
+            /*if(person.getFirstName().equals(firstName) && person.getLastName().equals(lastName)){
                 PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
                 selectedPersons.add(personInfoAlertDTO);
-            }
-            if(person.getFirstName().equals(firstName)){
+            }*/
+            if(person.getLastName().equals(lastName)){
                 PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
                 selectedPersons.add(personInfoAlertDTO);
             }
