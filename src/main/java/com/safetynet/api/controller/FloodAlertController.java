@@ -1,6 +1,5 @@
 package com.safetynet.api.controller;
 
-import com.safetynet.api.model.DTO.ListPersonsFirestationAlertDTO;
 import com.safetynet.api.model.DTO.ListPersonsFloodAlertDTO;
 import com.safetynet.api.service.FloodAlertService;
 import org.apache.logging.log4j.LogManager;
