@@ -30,6 +30,8 @@ public class AlertServiceTest {
     private FireAlertService fireAlertService;
     @Autowired
     private FloodAlertService floodAlertService;
+    @Autowired
+    private PersonInfoAlertService personInfoAlertService;
 
 
     @Test
@@ -195,5 +197,42 @@ public class AlertServiceTest {
         //THEN
         Assertions.assertEquals(personFloodAlertDTO1.getAddress(), personFloodAlertDTO2.getAddress());
         Assertions.assertEquals("Poudlard castle", personFloodAlertDTO3.getAddress());
+    }
+
+    @Test
+    public void testGetPersonInfoAlert(){
+        //GIVEN
+        Person person1 = new Person();
+        person1.setFirstName("John");
+        person1.setLastName("Doe");
+        person1.setAddress("13 unknown street");
+        person1.setBirthdate("12/12/1982");
+        person1.setEmail("jdoe@unknown.com");
+        person1.setMedications(new String[]{"Penny", "Ciline"});
+        person1.setAllergies(new String[]{"kindness"});
+
+        Person person2 = new Person();
+        person2.setFirstName("Karen");
+        person2.setLastName("Doe");
+        person2.setAddress("1 unknown street");
+        person2.setBirthdate("12/12/2002");
+        person2.setEmail("kdoe@unknown.com");
+        person2.setMedications(new String[]{"Penny", "Ciline"});
+        person2.setAllergies(new String[]{"kindness"});
+
+        ArrayList<Person> allPersons = new ArrayList<>();
+        allPersons.add(person1);
+        allPersons.add(person2);
+        when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
+
+        //WHEN
+        ListPersonsPersonInfoAlertDTO listPersonsPersonInfoAlertDTO = personInfoAlertService.getPersonInfoAlert("John", "Doe");
+        ArrayList<PersonInfoAlertDTO> selectedPersons = listPersonsPersonInfoAlertDTO.getPersons();
+        PersonInfoAlertDTO personInfoAlertDTO1 = selectedPersons.get(0);
+        PersonInfoAlertDTO personInfoAlertDTO2 = selectedPersons.get(1);
+
+        //THEN
+        Assertions.assertEquals("jdoe@unknown.com", personInfoAlertDTO1.getEmail());
+        Assertions.assertEquals("kdoe@unknown.com", personInfoAlertDTO2.getEmail());
     }
 }

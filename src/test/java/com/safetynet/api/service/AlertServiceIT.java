@@ -21,6 +21,8 @@ public class AlertServiceIT {
     private FireAlertService fireAlertService;
     @Autowired
     private FloodAlertService floodAlertService;
+    @Autowired
+    private PersonInfoAlertService personInfoAlertService;
 
 
     @Test
@@ -69,5 +71,14 @@ public class AlertServiceIT {
 
         //THEN
         Assertions.assertNotNull(floodAlertService);
+    }
+
+    @Test
+    public void integrationTest_GetPersonInfoAlert(){
+        //WHEN
+        personInfoAlertService.getPersonInfoAlert("John","Boyd");
+
+        //THEN
+        Assertions.assertNotNull(personInfoAlertService);
     }
 }
