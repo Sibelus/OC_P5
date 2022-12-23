@@ -46,4 +46,11 @@ public class AlertControllerIT {
                 .andExpect(jsonPath("$.firestationNumber", is(3)))
                 .andExpect(jsonPath("$.persons[0].lastName", is("Boyd")));
     }
+
+    @Test
+    public void integrationTest_GetFloodAlert() throws Exception{
+        mockMvc.perform(get("/flood/stations/1,2,3"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.persons[0].address", is("1509 Culver St")));
+    }
 }

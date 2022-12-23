@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.mockito.Mockito.when;
 
@@ -27,6 +28,8 @@ public class AlertServiceTest {
     private PhoneAlertService phoneAlertService;
     @Autowired
     private FireAlertService fireAlertService;
+    @Autowired
+    private FloodAlertService floodAlertService;
 
 
     @Test
@@ -141,5 +144,56 @@ public class AlertServiceTest {
         //THEN
         Assertions.assertEquals(1, firestationNumber);
         Assertions.assertEquals("Herbert", personFireALertDTO.getLastName());
+    }
+
+    @Test
+    public void testGetFloodAlert(){
+        //GIVEN
+        Person person1 = new Person();
+        person1.setLastName("Potter");
+        person1.setAddress("1 underStairs street");
+        person1.setPhone("123-456-789");
+        person1.setStation(1);
+        person1.setBirthdate("12/12/2012");
+        person1.setMedications(new String[]{"Mandragore", "Butter beer"});
+        person1.setAllergies(new String[]{"black magic"});
+
+        Person person2 = new Person();
+        person2.setLastName("Palmer");
+        person2.setAddress("1 underStairs street");
+        person2.setPhone("123-456-789");
+        person2.setStation(1);
+        person2.setBirthdate("12/12/1982");
+        person2.setMedications(new String[]{"Penny", "Ciline"});
+        person2.setAllergies(new String[]{"black magic"});
+
+        Person person3 = new Person();
+        person3.setLastName("Dumbledor");
+        person3.setAddress("Poudlard castle");
+        person3.setPhone("123-456-789");
+        person3.setStation(1);
+        person3.setBirthdate("12/12/2012");
+        person3.setMedications(new String[]{"Mandragore", "Butter beer"});
+        person3.setAllergies(new String[]{"black magic"});
+
+        ArrayList<Person> allPersons = new ArrayList<>();
+        allPersons.add(person1);
+        allPersons.add(person2);
+        allPersons.add(person3);
+        when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
+
+        ArrayList<Integer> firestationNumberList = new ArrayList<>(Arrays.asList(1, 2, 3));
+
+
+        //WHEN
+        ListPersonsFloodAlertDTO listPersonsFloodAlertDTO = floodAlertService.getFloodAlert(firestationNumberList);
+        ArrayList<PersonFloodAlertDTO> selectedPersons = listPersonsFloodAlertDTO.getPersons();
+        PersonFloodAlertDTO personFloodAlertDTO1 = selectedPersons.get(0);
+        PersonFloodAlertDTO personFloodAlertDTO2 = selectedPersons.get(1);
+        PersonFloodAlertDTO personFloodAlertDTO3 = selectedPersons.get(2);
+
+        //THEN
+        Assertions.assertEquals(personFloodAlertDTO1.getAddress(), personFloodAlertDTO2.getAddress());
+        Assertions.assertEquals("Poudlard castle", personFloodAlertDTO3.getAddress());
     }
 }

@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 @SpringBootTest
 public class AlertServiceIT {
 
@@ -16,6 +19,8 @@ public class AlertServiceIT {
     private PhoneAlertService phoneAlertService;
     @Autowired
     private FireAlertService fireAlertService;
+    @Autowired
+    private FloodAlertService floodAlertService;
 
 
     @Test
@@ -52,5 +57,17 @@ public class AlertServiceIT {
 
         //THEN
         Assertions.assertNotNull(fireAlertService);
+    }
+
+    @Test
+    public void integrationTest_GetFloodAlert(){
+        //GIVEN
+        ArrayList<Integer> intList = new ArrayList<>(Arrays.asList(1, 2, 3));
+
+        //WHEN
+        floodAlertService.getFloodAlert(intList);
+
+        //THEN
+        Assertions.assertNotNull(floodAlertService);
     }
 }

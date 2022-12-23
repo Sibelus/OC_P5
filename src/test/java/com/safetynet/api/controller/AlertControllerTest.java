@@ -1,9 +1,6 @@
 package com.safetynet.api.controller;
 
-import com.safetynet.api.service.ChildAlertService;
-import com.safetynet.api.service.FireAlertService;
-import com.safetynet.api.service.FirestationAlertService;
-import com.safetynet.api.service.PhoneAlertService;
+import com.safetynet.api.service.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -17,7 +14,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(controllers = {FirestationAlertController.class,
         ChildAlertController.class,
         PhoneAlertController.class,
-        FireAlertController.class})
+        FireAlertController.class,
+        FloodAlertController.class})
 public class AlertControllerTest {
 
     @Autowired
@@ -31,6 +29,8 @@ public class AlertControllerTest {
     private PhoneAlertService phoneAlertService;
     @MockBean
     private FireAlertService fireAlertService;
+    @MockBean
+    private FloodAlertService floodAlertService;
 
 
     @Test
@@ -54,6 +54,12 @@ public class AlertControllerTest {
     @Test
     public void testGetFireAlert() throws Exception{
         mockMvc.perform(get("/fire/1509 Culver St"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void testGetFloodAlert() throws Exception{
+        mockMvc.perform(get("/flood/stations/1,2,3"))
                 .andExpect(status().isOk());
     }
 }

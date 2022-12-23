@@ -194,4 +194,56 @@ public class ModelDTOTest {
         Assertions.assertEquals(fireAlertList, listPersonsFireAlertDTO.getPersons());
         Assertions.assertEquals(listPersonsFireALertDTOToString, listPersonsFireAlertDTO.toString());
     }
+
+    @Test
+    public void testPersonFloodAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        PersonFloodAlertDTO personFloodAlertDTO = new PersonFloodAlertDTO();
+        String lastName = "Potter";
+        String address = "1 underStairs street";
+        String phone = "123-456-789";
+        int age = 7;
+        String[] medications = {"Mandragore", "Butter beer"};
+        String[] allergies = {"black magic"};
+        String personFloodAlertDTOToString = "PersonFloodAlertDTO{" +
+                "lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", age=" + age +
+                ", medications=" + Arrays.toString(medications) +
+                ", allergies=" + Arrays.toString(allergies) +
+                '}';
+
+        //WHEN
+        personFloodAlertDTO.setLastName(lastName);
+        personFloodAlertDTO.setAddress(address);
+        personFloodAlertDTO.setPhone(phone);
+        personFloodAlertDTO.setAge(age);
+        personFloodAlertDTO.setMedications(medications);
+        personFloodAlertDTO.setAllergies(allergies);
+
+        //THEN
+        Assertions.assertEquals(lastName, personFloodAlertDTO.getLastName());
+        Assertions.assertEquals(address, personFloodAlertDTO.getAddress());
+        Assertions.assertEquals(phone, personFloodAlertDTO.getPhone());
+        Assertions.assertEquals(age, personFloodAlertDTO.getAge());
+        Assertions.assertEquals(medications, personFloodAlertDTO.getMedications());
+        Assertions.assertEquals(allergies, personFloodAlertDTO.getAllergies());
+        Assertions.assertEquals(personFloodAlertDTOToString, personFloodAlertDTO.toString());
+    }
+
+    @Test
+    public void testListPersonsFloodAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        ListPersonsFloodAlertDTO listPersonsFloodAlertDTO = new ListPersonsFloodAlertDTO();
+        ArrayList<PersonFloodAlertDTO> floodAlertList = new ArrayList<>();
+        String listPersonsFloodAlertDTOToString = "{ persons=" + floodAlertList + '}';
+
+        //WHEN
+        listPersonsFloodAlertDTO.setPersons(floodAlertList);
+
+        //THEN
+        Assertions.assertEquals(floodAlertList, listPersonsFloodAlertDTO.getPersons());
+        Assertions.assertEquals(listPersonsFloodAlertDTOToString, listPersonsFloodAlertDTO.toString());
+    }
 }
