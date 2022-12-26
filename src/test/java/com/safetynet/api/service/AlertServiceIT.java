@@ -23,6 +23,8 @@ public class AlertServiceIT {
     private FloodAlertService floodAlertService;
     @Autowired
     private PersonInfoAlertService personInfoAlertService;
+    @Autowired
+    private CommunityEmailAlertService communityEmailAlertService;
 
 
     @Test
@@ -80,5 +82,14 @@ public class AlertServiceIT {
 
         //THEN
         Assertions.assertNotNull(personInfoAlertService);
+    }
+
+    @Test
+    public void integrationTest_GetCommunityEmailAlert(){
+        //WHEN
+        communityEmailAlertService.getCommunityEmailAlert("Culver");
+
+        //THEN
+        Assertions.assertNotNull(communityEmailAlertService);
     }
 }

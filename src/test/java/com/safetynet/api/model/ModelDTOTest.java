@@ -285,7 +285,7 @@ public class ModelDTOTest {
     }
 
     @Test
-    public void testListPersonsPersonInfoAlert_SetAndGetAllInfos(){
+    public void testListPersonsPersonInfoAlertDTO_SetAndGetAllInfos(){
         //GIVEN
         ListPersonsPersonInfoAlertDTO listPersonsPersonInfoAlertDTO = new ListPersonsPersonInfoAlertDTO();
         ArrayList<PersonInfoAlertDTO> personInfoAlertList = new ArrayList<>();
@@ -297,5 +297,37 @@ public class ModelDTOTest {
         //THEN
         Assertions.assertEquals(personInfoAlertList, listPersonsPersonInfoAlertDTO.getPersons());
         Assertions.assertEquals(listPersonsPersonInfoAlertDTOToString, listPersonsPersonInfoAlertDTO.toString());
+    }
+
+    @Test
+    public void testPersonCommunityEmailAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        PersonCommunityEmailDTO personCommunityEmailDTO = new PersonCommunityEmailDTO();
+        String email = "jdoe@unknown.com";
+        String personCommunityEmailDTOToString = "PersonCommunityEmailDTO{" +
+                "email='" + email + '\'' +
+                '}';
+
+        //WHEN
+        personCommunityEmailDTO.setEmail(email);
+
+        //THEN
+        Assertions.assertEquals(email, personCommunityEmailDTO.getEmail());
+        Assertions.assertEquals(personCommunityEmailDTOToString, personCommunityEmailDTO.toString());
+    }
+
+    @Test
+    public void testListPersonsCommunityEmailAlertDTO_SetAndGetAllInfos(){
+        //GIVEN
+        ListPersonsCommunityEmailAlertDTO listPersonsCommunityEmailAlertDTO = new ListPersonsCommunityEmailAlertDTO();
+        ArrayList<PersonCommunityEmailDTO> communityEmailAlertList = new ArrayList<>();
+        String listPersonsCommunityEmailAlertDTOToString = "{ communityEmailAlertList=" + communityEmailAlertList + '}';
+
+        //WHEN
+        listPersonsCommunityEmailAlertDTO.setCommunityEmailAlertList(communityEmailAlertList);
+
+        //THEN
+        Assertions.assertEquals(communityEmailAlertList, listPersonsCommunityEmailAlertDTO.getCommunityEmailAlertList());
+        Assertions.assertEquals(listPersonsCommunityEmailAlertDTOToString, listPersonsCommunityEmailAlertDTO.toString());
     }
 }

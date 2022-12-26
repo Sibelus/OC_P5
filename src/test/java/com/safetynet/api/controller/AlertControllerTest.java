@@ -16,7 +16,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
         PhoneAlertController.class,
         FireAlertController.class,
         FloodAlertController.class,
-        PersonInfoController.class})
+        PersonInfoController.class,
+        CommunityEmailAlertController.class})
 public class AlertControllerTest {
 
     @Autowired
@@ -34,6 +35,8 @@ public class AlertControllerTest {
     private FloodAlertService floodAlertService;
     @MockBean
     private PersonInfoAlertService personInfoAlertService;
+    @MockBean
+    private CommunityEmailAlertService communityEmailAlertService;
 
 
     @Test
@@ -69,6 +72,12 @@ public class AlertControllerTest {
     @Test
     public void testGetPersonInfoAlert() throws Exception{
         mockMvc.perform(get("/personInfo/John,Boyd"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void testGetCommunityEmailAlert() throws Exception{
+        mockMvc.perform(get("/communityEmail/Culver"))
                 .andExpect(status().isOk());
     }
 }

@@ -60,4 +60,11 @@ public class AlertControllerIT {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.persons[0].email", is("jaboyd@email.com")));
     }
+
+    @Test
+    public void integrationTest_GetCommunityEmailAlert() throws Exception{
+        mockMvc.perform(get("/communityEmail/Culver"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.communityEmailAlertList[0].email", is("jaboyd@email.com")));
+    }
 }

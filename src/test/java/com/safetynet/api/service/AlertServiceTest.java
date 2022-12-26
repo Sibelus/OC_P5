@@ -32,6 +32,8 @@ public class AlertServiceTest {
     private FloodAlertService floodAlertService;
     @Autowired
     private PersonInfoAlertService personInfoAlertService;
+    @Autowired
+    private CommunityEmailAlertService communityEmailAlertService;
 
 
     @Test
@@ -234,5 +236,25 @@ public class AlertServiceTest {
         //THEN
         Assertions.assertEquals("jdoe@unknown.com", personInfoAlertDTO1.getEmail());
         Assertions.assertEquals("kdoe@unknown.com", personInfoAlertDTO2.getEmail());
+    }
+
+    @Test
+    public void testGetCommunityEmailAlert(){
+        //GIVEN
+        Person person = new Person();
+        person.setEmail("jdoe@unknown.com");
+        person.setCity("Culver");
+
+        ArrayList<Person> allPersons = new ArrayList<>();
+        allPersons.add(person);
+        when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
+
+        //WHEN
+        ListPersonsCommunityEmailAlertDTO listPersonsCommunityEmailAlertDTO = communityEmailAlertService.getCommunityEmailAlert("Culver");
+        ArrayList<PersonCommunityEmailDTO> selectedPersons = listPersonsCommunityEmailAlertDTO.getCommunityEmailAlertList();
+        PersonCommunityEmailDTO personCommunityEmailDTO = selectedPersons.get(0);
+
+        //THEN
+        Assertions.assertEquals("jdoe@unknown.com", personCommunityEmailDTO.getEmail());
     }
 }
