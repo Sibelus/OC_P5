@@ -21,27 +21,6 @@ public class CommunityEmailAlertService implements IAlertService{
     @Autowired
     private PersonRepository personRepository;
 
-    public ListPersonsCommunityEmailAlertDTO getCommunityEmailAlert(String city){
-        ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
-        ArrayList<PersonCommunityEmailDTO> selectedPersons = new ArrayList<>();
-
-        for(Person person : allPersons){
-            if(city == null || city.equals("")){
-                logger.error("City provided is null or empty");
-                throw new IllegalArgumentException("City provided is incorrect: " + city);
-            }
-            if (person.getCity().equals(city)){
-                PersonCommunityEmailDTO personCommunityEmailDTO =new PersonCommunityEmailDTO();
-                personCommunityEmailDTO.setEmail(person.getEmail());
-                selectedPersons.add(personCommunityEmailDTO);
-            }
-        }
-
-        ListPersonsCommunityEmailAlertDTO listPersonsCommunityEmailAlertDTO = new ListPersonsCommunityEmailAlertDTO();
-        listPersonsCommunityEmailAlertDTO.setCommunityEmailAlertList(selectedPersons);
-        return listPersonsCommunityEmailAlertDTO;
-    }
-
     @Override
     public Object getAlert(Object... object) {
         String city = (String) object[0];

@@ -48,7 +48,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPerson);
 
         //WHEN
-        ListPersonsFirestationAlertDTO listPersonsFirestationAlertDTO = firestationAlertService.getFirestationAlert(1);
+        ListPersonsFirestationAlertDTO listPersonsFirestationAlertDTO = (ListPersonsFirestationAlertDTO) firestationAlertService.getAlert(1);
         ArrayList<PersonFirestationAlertDTO> selectedPersons = listPersonsFirestationAlertDTO.getPersons();
         PersonFirestationAlertDTO personFirestationAlertDTO = selectedPersons.get(0);
 
@@ -68,7 +68,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPerson);
 
         //WHEN
-        ListPersonsFirestationAlertDTO listPersonsFirestationAlertDTO = firestationAlertService.getFirestationAlert(1);
+        ListPersonsFirestationAlertDTO listPersonsFirestationAlertDTO = (ListPersonsFirestationAlertDTO) firestationAlertService.getAlert(1);
 
         //THEN
         Assertions.assertEquals(1, listPersonsFirestationAlertDTO.getChildren());
@@ -94,7 +94,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPerson);
 
         //WHEN
-        ListPersonsChildAlertDTO listPersonsChildAlertDTO = childAlertService.getChildAlert("221 B backer street");
+        ListPersonsChildAlertDTO listPersonsChildAlertDTO = (ListPersonsChildAlertDTO) childAlertService.getAlert("221 B backer street");
         ArrayList<PersonChildAlertDTO> selectedPersons = listPersonsChildAlertDTO.getChildrenAndTheirFamily();
         PersonChildAlertDTO personChildAlertDTO = selectedPersons.get(0);
 
@@ -115,7 +115,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPerson);
 
         //WHEN
-        ListePersonsPhoneAlertDTO listePersonsPhoneAlertDTO = phoneAlertService.getPhoneAlert(1);
+        ListePersonsPhoneAlertDTO listePersonsPhoneAlertDTO = (ListePersonsPhoneAlertDTO) phoneAlertService.getAlert(1);
         ArrayList<PersonPhoneAlertDTO> selectedPersons = listePersonsPhoneAlertDTO.getPhoneAlertList();
         PersonPhoneAlertDTO personPhoneAlertDTO = selectedPersons.get(0);
 
@@ -140,7 +140,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
 
         //WHEN
-        ListPersonsFireAlertDTO listPersonsFireAlertDTO = fireAlertService.getFireAlert("31 jump street");
+        ListPersonsFireAlertDTO listPersonsFireAlertDTO = (ListPersonsFireAlertDTO) fireAlertService.getAlert("31 jump street");
         ArrayList<PersonFireALertDTO> selectedPersons = listPersonsFireAlertDTO.getPersons();
         PersonFireALertDTO personFireALertDTO = selectedPersons.get(0);
         int firestationNumber = listPersonsFireAlertDTO.getFirestationNumber();
@@ -190,7 +190,7 @@ public class AlertServiceTest {
 
 
         //WHEN
-        ListPersonsFloodAlertDTO listPersonsFloodAlertDTO = floodAlertService.getFloodAlert(firestationNumberList);
+        ListPersonsFloodAlertDTO listPersonsFloodAlertDTO = (ListPersonsFloodAlertDTO) floodAlertService.getAlert(firestationNumberList);
         ArrayList<PersonFloodAlertDTO> selectedPersons = listPersonsFloodAlertDTO.getPersons();
         PersonFloodAlertDTO personFloodAlertDTO1 = selectedPersons.get(0);
         PersonFloodAlertDTO personFloodAlertDTO2 = selectedPersons.get(1);
@@ -228,7 +228,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
 
         //WHEN
-        ListPersonsPersonInfoAlertDTO listPersonsPersonInfoAlertDTO = personInfoAlertService.getPersonInfoAlert("John", "Doe");
+        ListPersonsPersonInfoAlertDTO listPersonsPersonInfoAlertDTO = (ListPersonsPersonInfoAlertDTO) personInfoAlertService.getAlert("John", "Doe");
         ArrayList<PersonInfoAlertDTO> selectedPersons = listPersonsPersonInfoAlertDTO.getPersons();
         PersonInfoAlertDTO personInfoAlertDTO1 = selectedPersons.get(0);
         PersonInfoAlertDTO personInfoAlertDTO2 = selectedPersons.get(1);
@@ -250,7 +250,7 @@ public class AlertServiceTest {
         when(personRepository.getPersonsAggregatedData()).thenReturn(allPersons);
 
         //WHEN
-        ListPersonsCommunityEmailAlertDTO listPersonsCommunityEmailAlertDTO = communityEmailAlertService.getCommunityEmailAlert("Culver");
+        ListPersonsCommunityEmailAlertDTO listPersonsCommunityEmailAlertDTO = (ListPersonsCommunityEmailAlertDTO) communityEmailAlertService.getAlert("Culver");
         ArrayList<PersonCommunityEmailDTO> selectedPersons = listPersonsCommunityEmailAlertDTO.getCommunityEmailAlertList();
         PersonCommunityEmailDTO personCommunityEmailDTO = selectedPersons.get(0);
 

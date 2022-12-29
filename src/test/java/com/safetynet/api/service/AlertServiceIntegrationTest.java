@@ -30,7 +30,7 @@ public class AlertServiceIntegrationTest {
     @Test
     public void integrationTest_GetFirestationAlert(){
         //WHEN
-        firestationAlertService.getFirestationAlert(1);
+        firestationAlertService.getAlert(1);
 
         //THEN
         Assertions.assertNotNull(firestationAlertService);
@@ -39,7 +39,7 @@ public class AlertServiceIntegrationTest {
     @Test
     public void integrationTest_GetChildAlert(){
         //WHEN
-        childAlertService.getChildAlert("1509 Culver St");
+        childAlertService.getAlert("1509 Culver St");
 
         //THEN
         Assertions.assertNotNull(childAlertService);
@@ -48,7 +48,7 @@ public class AlertServiceIntegrationTest {
     @Test
     public void integrationTest_GetPhoneAlert(){
         //WHEN
-        phoneAlertService.getPhoneAlert(1);
+        phoneAlertService.getAlert(1);
 
         //THEN
         Assertions.assertNotNull(phoneAlertService);
@@ -57,7 +57,7 @@ public class AlertServiceIntegrationTest {
     @Test
     public void integrationTest_GetFireAlert(){
         //WHEN
-        fireAlertService.getFireAlert("1509 Culver St");
+        fireAlertService.getAlert("1509 Culver St");
 
         //THEN
         Assertions.assertNotNull(fireAlertService);
@@ -69,7 +69,7 @@ public class AlertServiceIntegrationTest {
         ArrayList<Integer> intList = new ArrayList<>(Arrays.asList(1, 2, 3));
 
         //WHEN
-        floodAlertService.getFloodAlert(intList);
+        floodAlertService.getAlert(intList);
 
         //THEN
         Assertions.assertNotNull(floodAlertService);
@@ -78,7 +78,7 @@ public class AlertServiceIntegrationTest {
     @Test
     public void integrationTest_GetPersonInfoAlert(){
         //WHEN
-        personInfoAlertService.getPersonInfoAlert("John","Boyd");
+        personInfoAlertService.getAlert("John","Boyd");
 
         //THEN
         Assertions.assertNotNull(personInfoAlertService);
@@ -87,7 +87,7 @@ public class AlertServiceIntegrationTest {
     @Test
     public void integrationTest_GetCommunityEmailAlert(){
         //WHEN
-        communityEmailAlertService.getCommunityEmailAlert("Culver");
+        communityEmailAlertService.getAlert("Culver");
 
         //THEN
         Assertions.assertNotNull(communityEmailAlertService);

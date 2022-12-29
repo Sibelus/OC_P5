@@ -23,24 +23,6 @@ public class ChildAlertService implements IAlertService{
     @Autowired
     private PersonService personService;
 
-    /*
-    public ListPersonsChildAlertDTO getChildAlert(String address){
-
-        ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
-
-        ArrayList<PersonChildAlertDTO> allResident = getResident(address);
-        ArrayList<PersonChildAlertDTO> childrenList = getChildrenList(allResident);
-
-        for(PersonChildAlertDTO child : childrenList){
-            ArrayList<PersonChildAlertDTO> familyMember = getResident(address);
-            familyMember.remove(child);
-            child.setOtherFamillyMembers(familyMember);
-        }
-
-        listPersonsChildAlertDTO.setChildrenAndTheirFamily(childrenList);
-        return listPersonsChildAlertDTO;
-    }*/
-
 
     private ArrayList<PersonChildAlertDTO> getResident(String address){
         ArrayList<PersonChildAlertDTO> selectedPersons = new ArrayList<>();

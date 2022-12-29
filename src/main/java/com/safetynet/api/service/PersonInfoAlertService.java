@@ -23,34 +23,6 @@ public class PersonInfoAlertService implements IAlertService{
     @Autowired
     PersonService personService;
 
-    public ListPersonsPersonInfoAlertDTO getPersonInfoAlert(String firstName, String lastName){
-        ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
-        ArrayList<PersonInfoAlertDTO> selectedPersons = new ArrayList<>();
-
-        for(Person person : allPersons){
-            if(firstName == null || firstName.equals("")){
-                logger.error("Firstname provided is null or empty");
-                throw new IllegalArgumentException("Firstname provided is incorrect: " + firstName);
-            }
-            if(lastName == null || lastName.equals("")){
-                logger.error("Lastname provided is null or empty");
-                throw new IllegalArgumentException("Lastname provided is incorrect: " + lastName);
-            }
-            /*if(person.getFirstName().equals(firstName) && person.getLastName().equals(lastName)){
-                PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
-                selectedPersons.add(personInfoAlertDTO);
-            }*/
-            if(person.getLastName().equals(lastName)){
-                PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
-                selectedPersons.add(personInfoAlertDTO);
-            }
-
-        }
-        ListPersonsPersonInfoAlertDTO listPersonsPersonInfoAlertDTO = new ListPersonsPersonInfoAlertDTO();
-        listPersonsPersonInfoAlertDTO.setPersons(selectedPersons);
-        return listPersonsPersonInfoAlertDTO;
-    }
-
     public PersonInfoAlertDTO setPersonInfos(Person person){
         PersonInfoAlertDTO personInfoAlertDTO = new PersonInfoAlertDTO();
         personInfoAlertDTO.setLastName(person.getLastName());
@@ -79,10 +51,7 @@ public class PersonInfoAlertService implements IAlertService{
                 logger.error("Lastname provided is null or empty");
                 throw new IllegalArgumentException("Lastname provided is incorrect: " + lastName);
             }
-            /*if(person.getFirstName().equals(firstName) && person.getLastName().equals(lastName)){
-                PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
-                selectedPersons.add(personInfoAlertDTO);
-            }*/
+
             if(person.getLastName().equals(lastName)){
                 PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
                 selectedPersons.add(personInfoAlertDTO);
