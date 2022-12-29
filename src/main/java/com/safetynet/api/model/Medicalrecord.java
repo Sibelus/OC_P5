@@ -43,10 +43,10 @@ public class Medicalrecord {
     @Override
     public String toString() {
         return "Medicalrecord{" +
-                " fistname='" + firstName + '\'' +
+                " firstname='" + firstName + '\'' +
                 " lastname='" + lastName + '\'' +
                 " birthdate='" + birthdate + '\'' +
-                " medaications='" + medications + '\'' +
+                " medications='" + medications + '\'' +
                 " allergies='" + allergies + '\'' +
                 '}';
     }

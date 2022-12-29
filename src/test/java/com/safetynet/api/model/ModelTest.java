@@ -92,7 +92,7 @@ public class ModelTest {
         String address = "Fire street";
         int station = 1;
         String firestationToString = "Firestation{" +
-                " adress='" + address + '\'' +
+                " address='" + address + '\'' +
                 " station='" + station + '\'' +
                 '}';
 
@@ -132,10 +132,10 @@ public class ModelTest {
         String[] medications = {"scotch","glue"};
         String[] allergies = {"pollen", "penicillin"};
         String medicalrecordToString = "Medicalrecord{" +
-                " fistname='" + firstName + '\'' +
+                " firstname='" + firstName + '\'' +
                 " lastname='" + lastName + '\'' +
                 " birthdate='" + birthdate + '\'' +
-                " medaications='" + medications + '\'' +
+                " medications='" + medications + '\'' +
                 " allergies='" + allergies + '\'' +
                 '}';
 
