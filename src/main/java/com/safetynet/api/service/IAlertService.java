@@ -3,7 +3,7 @@ package com.safetynet.api.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface IServiceAlert {
+public interface IAlertService {
 
-    public Object getAlert();
+    Object getAlert(Object object);
 }
