@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.ArrayList;
 
 @SpringBootTest
-public class PersonRepositoryIT {
+public class PersonRepositoryIntegrationTest {
 
     @Autowired
     private PersonRepository personRepository;

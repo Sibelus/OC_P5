@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 @SpringBootTest
-public class AlertServiceIT {
+public class AlertServiceIntegrationTest {
 
     @Autowired
     private FirestationAlertService firestationAlertService;
