@@ -7,13 +7,14 @@ import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-@Service
-public class PhoneAlertService {
+@Component("phoneAlert")
+public class PhoneAlertService implements IAlertService{
 
     private static final Logger logger = LogManager.getLogger(PhoneAlertService.class);
 
@@ -22,7 +23,9 @@ public class PhoneAlertService {
     @Autowired
     private ListePersonsPhoneAlertDTO listePersonsPhoneAlertDTO;
 
-    public ListePersonsPhoneAlertDTO getPhoneAlert(int firestationNumber){
+    @Override
+    public Object getAlert(Object ... object) {
+        int firestationNumber = (int) object[0];
         ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
         ArrayList<PersonPhoneAlertDTO> selectedPersons = new ArrayList<>();
 

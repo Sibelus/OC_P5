@@ -8,12 +8,13 @@ import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-@Service
-public class PersonInfoAlertService {
+@Component("personInfoAlert")
+public class PersonInfoAlertService implements IAlertService{
 
     private static final Logger logger = LogManager.getLogger(FloodAlertController.class);
 
@@ -60,5 +61,36 @@ public class PersonInfoAlertService {
         personInfoAlertDTO.setAllergies(person.getAllergies());
 
         return personInfoAlertDTO;
+    }
+
+    @Override
+    public Object getAlert(Object... object) {
+        String firstName = (String) object[0];
+        String lastName = (String) object[1];
+        ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
+        ArrayList<PersonInfoAlertDTO> selectedPersons = new ArrayList<>();
+
+        for(Person person : allPersons){
+            if(firstName == null || firstName.equals("")){
+                logger.error("Firstname provided is null or empty");
+                throw new IllegalArgumentException("Firstname provided is incorrect: " + firstName);
+            }
+            if(lastName == null || lastName.equals("")){
+                logger.error("Lastname provided is null or empty");
+                throw new IllegalArgumentException("Lastname provided is incorrect: " + lastName);
+            }
+            /*if(person.getFirstName().equals(firstName) && person.getLastName().equals(lastName)){
+                PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
+                selectedPersons.add(personInfoAlertDTO);
+            }*/
+            if(person.getLastName().equals(lastName)){
+                PersonInfoAlertDTO personInfoAlertDTO = setPersonInfos(person);
+                selectedPersons.add(personInfoAlertDTO);
+            }
+
+        }
+        ListPersonsPersonInfoAlertDTO listPersonsPersonInfoAlertDTO = new ListPersonsPersonInfoAlertDTO();
+        listPersonsPersonInfoAlertDTO.setPersons(selectedPersons);
+        return listPersonsPersonInfoAlertDTO;
     }
 }

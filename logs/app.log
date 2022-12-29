@@ -11045,3 +11045,668 @@ java.text.ParseException: Unparseable date: "01-01-2000"
 2022-12-29 18:40:14,385 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Clive Ferguson depends of firestation number 3
 2022-12-29 18:40:14,385 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Eric Cadigan depends of firestation number 2
 2022-12-29 18:40:14,385 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-2] Return { children='1' adults='5' persons='[{ fistname='Peter' lastname='Duncan' adress='644 Gershwin Cir', phone='841-874-6512'}, { fistname='Reginold' lastname='Walker' adress='908 73rd St', phone='841-874-8547'}, { fistname='Jamie' lastname='Peters' adress='908 73rd St', phone='841-874-7462'}, { fistname='Brian' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Shawna' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Kendrik' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}]'}
+2022-12-29 20:17:54,987 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 23476 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 20:17:54,993 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 20:17:54,994 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 20:17:55,935 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.223 seconds (process running for 1.757)
+2022-12-29 20:18:04,384 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-2] Request alert infos for firestation number 1
+2022-12-29 20:18:04,433 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] John Boyd depends of firestation number 3
+2022-12-29 20:18:04,433 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jacob Boyd depends of firestation number 3
+2022-12-29 20:18:04,433 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tenley Boyd depends of firestation number 3
+2022-12-29 20:18:04,433 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Roger Boyd depends of firestation number 3
+2022-12-29 20:18:04,433 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Felicia Boyd depends of firestation number 3
+2022-12-29 20:18:04,434 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jonanathan Marrack depends of firestation number 2
+2022-12-29 20:18:04,434 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tessa Carman depends of firestation number 3
+2022-12-29 20:18:04,434 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Peter Duncan depends of firestation number 1
+2022-12-29 20:18:04,434 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Add Peter Duncan to the list
+2022-12-29 20:18:04,434 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2000-06-09T00:00:00.000+0200 and her age is 22
+2022-12-29 20:18:04,434 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Peter Duncan is an adult, adults counter = 1
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Foster Shepard depends of firestation number 3
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tony Cooper depends of firestation number 4
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Lily Cooper depends of firestation number 4
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Sophia Zemicks depends of firestation number 2
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Warren Zemicks depends of firestation number 2
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Zach Zemicks depends of firestation number 2
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Reginold Walker depends of firestation number 1
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Add Reginold Walker to the list
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1981-06-08T00:00:00.000+0200 and her age is 41
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:18:04,435 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Reginold Walker is an adult, adults counter = 2
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jamie Peters depends of firestation number 1
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Add Jamie Peters to the list
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1982-06-03T00:00:00.000+0200 and her age is 40
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jamie Peters is an adult, adults counter = 3
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Ron Peters depends of firestation number 4
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Allison Boyd depends of firestation number 4
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Brian Stelzer depends of firestation number 1
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Add Brian Stelzer to the list
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1975-06-12T00:00:00.000+0100 and her age is 47
+2022-12-29 20:18:04,436 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Brian Stelzer is an adult, adults counter = 4
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Shawna Stelzer depends of firestation number 1
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Add Shawna Stelzer to the list
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1980-08-07T00:00:00.000+0200 and her age is 42
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Shawna Stelzer is an adult, adults counter = 5
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Kendrik Stelzer depends of firestation number 1
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Add Kendrik Stelzer to the list
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2014-06-03T00:00:00.000+0200 and her age is 8
+2022-12-29 20:18:04,437 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is a child
+2022-12-29 20:18:04,439 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Kendrik Stelzer is a child, children counter = 1
+2022-12-29 20:18:04,439 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Clive Ferguson depends of firestation number 3
+2022-12-29 20:18:04,439 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Eric Cadigan depends of firestation number 2
+2022-12-29 20:18:04,439 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-2] Return { children='1' adults='5' persons='[{ fistname='Peter' lastname='Duncan' adress='644 Gershwin Cir', phone='841-874-6512'}, { fistname='Reginold' lastname='Walker' adress='908 73rd St', phone='841-874-8547'}, { fistname='Jamie' lastname='Peters' adress='908 73rd St', phone='841-874-7462'}, { fistname='Brian' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Shawna' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Kendrik' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}]'}
+2022-12-29 20:32:56,061 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 19124 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 20:32:56,067 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 20:32:56,068 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 20:32:56,991 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.195 seconds (process running for 1.703)
+2022-12-29 20:33:01,881 INFO c.s.a.c.ChildAlertController [http-nio-8080-exec-2] Request alert infos for children living at 1509 Culver St
+2022-12-29 20:33:01,925 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] John Boyd live at 1509 Culver St
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jacob Boyd live at 1509 Culver St
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tenley Boyd live at 1509 Culver St
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Roger Boyd live at 1509 Culver St
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Felicia Boyd live at 1509 Culver St
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:33:01,926 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is a child
+2022-12-29 20:33:01,927 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tenley Boyd added to childrenList
+2022-12-29 20:33:01,927 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is a child
+2022-12-29 20:33:01,927 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Roger Boyd added to childrenList
+2022-12-29 20:33:01,927 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] This person is an adult
+2022-12-29 20:33:01,931 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 20:33:01,931 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] John Boyd live at 1509 Culver St
+2022-12-29 20:33:01,931 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 20:33:01,931 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jacob Boyd live at 1509 Culver St
+2022-12-29 20:33:01,931 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 20:33:01,931 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tenley Boyd live at 1509 Culver St
+2022-12-29 20:33:01,932 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 20:33:01,932 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Roger Boyd live at 1509 Culver St
+2022-12-29 20:33:01,932 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 20:33:01,932 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Felicia Boyd live at 1509 Culver St
+2022-12-29 20:33:01,935 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 20:33:01,935 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] John Boyd live at 1509 Culver St
+2022-12-29 20:33:01,935 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 20:33:01,935 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Jacob Boyd live at 1509 Culver St
+2022-12-29 20:33:01,936 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 20:33:01,936 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Tenley Boyd live at 1509 Culver St
+2022-12-29 20:33:01,936 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 20:33:01,936 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Roger Boyd live at 1509 Culver St
+2022-12-29 20:33:01,936 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 20:33:01,936 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-2] Felicia Boyd live at 1509 Culver St
+2022-12-29 20:33:01,936 INFO c.s.a.c.ChildAlertController [http-nio-8080-exec-2] Return {childrenAndTheirFamily=[ChildAlertDTO{firstName='Tenley', lastName='Boyd', age=9, familyMembers=[ChildAlertDTO{firstName='John', lastName='Boyd', age=38, familyMembers=null}, ChildAlertDTO{firstName='Jacob', lastName='Boyd', age=33, familyMembers=null}, ChildAlertDTO{firstName='Roger', lastName='Boyd', age=5, familyMembers=null}, ChildAlertDTO{firstName='Felicia', lastName='Boyd', age=36, familyMembers=null}]}, ChildAlertDTO{firstName='Roger', lastName='Boyd', age=5, familyMembers=[ChildAlertDTO{firstName='John', lastName='Boyd', age=38, familyMembers=null}, ChildAlertDTO{firstName='Jacob', lastName='Boyd', age=33, familyMembers=null}, ChildAlertDTO{firstName='Tenley', lastName='Boyd', age=9, familyMembers=null}, ChildAlertDTO{firstName='Felicia', lastName='Boyd', age=36, familyMembers=null}]}]}
+2022-12-29 20:40:41,260 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 21472 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 20:40:41,266 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 20:40:41,267 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 20:40:42,220 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.233 seconds (process running for 1.732)
+2022-12-29 20:40:50,510 INFO c.s.a.c.PhoneAlertController [http-nio-8080-exec-2] Request phone numbers for firestation number 1
+2022-12-29 20:40:50,551 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] John Boyd depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Jacob Boyd depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Tenley Boyd depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Roger Boyd depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Felicia Boyd depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Jonanathan Marrack depends of firestation number 2
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Tessa Carman depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Peter Duncan depends of firestation number 1
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Add 841-874-6512 to the list
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Foster Shepard depends of firestation number 3
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Tony Cooper depends of firestation number 4
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Lily Cooper depends of firestation number 4
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Sophia Zemicks depends of firestation number 2
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Warren Zemicks depends of firestation number 2
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Zach Zemicks depends of firestation number 2
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Reginold Walker depends of firestation number 1
+2022-12-29 20:40:50,552 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Add 841-874-8547 to the list
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Jamie Peters depends of firestation number 1
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Add 841-874-7462 to the list
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Ron Peters depends of firestation number 4
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Allison Boyd depends of firestation number 4
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Brian Stelzer depends of firestation number 1
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Add 841-874-7784 to the list
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Shawna Stelzer depends of firestation number 1
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Add 841-874-7784 to the list
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Kendrik Stelzer depends of firestation number 1
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Add 841-874-7784 to the list
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Clive Ferguson depends of firestation number 3
+2022-12-29 20:40:50,553 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-2] Eric Cadigan depends of firestation number 2
+2022-12-29 20:40:50,553 INFO c.s.a.c.PhoneAlertController [http-nio-8080-exec-2] Return {phoneAlertList=[{phone='841-874-6512'}, {phone='841-874-8547'}, {phone='841-874-7462'}, {phone='841-874-7784'}, {phone='841-874-7784'}, {phone='841-874-7784'}]}
+2022-12-29 21:10:22,265 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 15652 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 21:10:22,271 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 21:10:22,271 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 21:10:23,192 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.181 seconds (process running for 1.671)
+2022-12-29 21:10:30,278 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-2] Request alert infos for this address : 1509 Culver St
+2022-12-29 21:10:30,280 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')] with root cause
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+	at com.safetynet.api.service.FirestationAlertService.getAlert(FirestationAlertService.java:69) ~[classes/:?]
+	at com.safetynet.api.controller.FireAlertController.firestationAlert(FireAlertController.java:26) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705) ~[tomcat-embed-core-10.1.1.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.1.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2022-12-29 21:11:42,732 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 24388 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 21:11:42,738 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 21:11:42,738 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 21:11:43,657 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.183 seconds (process running for 1.669)
+2022-12-29 21:11:47,963 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-2] Request alert infos for this address : 1509 Culver St
+2022-12-29 21:11:48,011 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:11:48,012 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:11:48,012 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:11:48,012 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:11:48,012 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:11:48,013 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-2] Return ListPersonsFireAlertDTO{firestationNumber=3, persons=[PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=38, medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6513', age=33, medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=9, medications=[], allergies=[peanut]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=5, medications=[], allergies=[]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6544', age=36, medications=[tetracyclaz:650mg], allergies=[xilliathal]}]}
+2022-12-29 21:15:39,869 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 11256 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 21:15:39,874 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 21:15:39,875 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 21:15:40,787 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.176 seconds (process running for 1.659)
+2022-12-29 21:15:46,336 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Request alert infos for firestation number [1, 2, 3]
+2022-12-29 21:15:46,384 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Peter Duncan depends of firestation 1
+2022-12-29 21:15:46,385 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2000-06-09T00:00:00.000+0200 and her age is 22
+2022-12-29 21:15:46,385 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,385 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Reginold Walker depends of firestation 1
+2022-12-29 21:15:46,385 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1981-06-08T00:00:00.000+0200 and her age is 41
+2022-12-29 21:15:46,385 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,385 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Jamie Peters depends of firestation 1
+2022-12-29 21:15:46,385 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1982-06-03T00:00:00.000+0200 and her age is 40
+2022-12-29 21:15:46,385 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,385 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Brian Stelzer depends of firestation 1
+2022-12-29 21:15:46,386 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1975-06-12T00:00:00.000+0100 and her age is 47
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Shawna Stelzer depends of firestation 1
+2022-12-29 21:15:46,386 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1980-08-07T00:00:00.000+0200 and her age is 42
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Kendrik Stelzer depends of firestation 1
+2022-12-29 21:15:46,386 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2014-06-03T00:00:00.000+0200 and her age is 8
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Jonanathan Marrack depends of firestation 2
+2022-12-29 21:15:46,386 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-03-01T00:00:00.000+0100 and her age is 33
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,386 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Sophia Zemicks depends of firestation 2
+2022-12-29 21:15:46,387 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1988-06-03T00:00:00.000+0200 and her age is 34
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Warren Zemicks depends of firestation 2
+2022-12-29 21:15:46,387 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1985-06-03T00:00:00.000+0200 and her age is 37
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Zach Zemicks depends of firestation 2
+2022-12-29 21:15:46,387 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-03T00:00:00.000+0200 and her age is 5
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Eric Cadigan depends of firestation 2
+2022-12-29 21:15:46,387 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1945-06-08T00:00:00.000+0200 and her age is 77
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,387 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] John Boyd depends of firestation 3
+2022-12-29 21:15:46,388 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Jacob Boyd depends of firestation 3
+2022-12-29 21:15:46,388 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Tenley Boyd depends of firestation 3
+2022-12-29 21:15:46,388 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Roger Boyd depends of firestation 3
+2022-12-29 21:15:46,388 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,388 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Felicia Boyd depends of firestation 3
+2022-12-29 21:15:46,389 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Tessa Carman depends of firestation 3
+2022-12-29 21:15:46,389 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Foster Shepard depends of firestation 3
+2022-12-29 21:15:46,389 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1980-08-01T00:00:00.000+0200 and her age is 42
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Clive Ferguson depends of firestation 3
+2022-12-29 21:15:46,389 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1994-06-03T00:00:00.000+0200 and her age is 28
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Added to the selectedPersons list
+2022-12-29 21:15:46,389 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Sorting the list by address
+2022-12-29 21:15:46,390 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Return { persons=[PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=38, medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6513', age=33, medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=9, medications=[], allergies=[peanut]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=5, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6544', age=36, medications=[tetracyclaz:650mg], allergies=[xilliathal]}, PersonFloodAlertDTO{lastName='Marrack', address='29 15th St', phone='841-874-6513', age=33, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Duncan', address='644 Gershwin Cir', phone='841-874-6512', age=22, medications=[], allergies=[shellfish]}, PersonFloodAlertDTO{lastName='Shepard', address='748 Townings Dr', phone='841-874-6544', age=42, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Ferguson', address='748 Townings Dr', phone='841-874-6741', age=28, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Carman', address='834 Binoc Ave', phone='841-874-6512', age=9, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7878', age=34, medications=[aznol:60mg, hydrapermazol:900mg, pharmacol:5000mg, terazine:500mg], allergies=[peanut, shellfish, aznol]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7512', age=37, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7512', age=5, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Walker', address='908 73rd St', phone='841-874-8547', age=41, medications=[thradox:700mg], allergies=[illisoxian]}, PersonFloodAlertDTO{lastName='Peters', address='908 73rd St', phone='841-874-7462', age=40, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=47, medications=[ibupurin:200mg, hydrapermazol:400mg], allergies=[nillacilan]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=42, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=8, medications=[noxidian:100mg, pharmacol:2500mg], allergies=[]}, PersonFloodAlertDTO{lastName='Cadigan', address='951 LoneTree Rd', phone='841-874-7458', age=77, medications=[tradoxidine:400mg], allergies=[]}]}
+2022-12-29 21:39:48,851 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 12264 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 21:39:48,857 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 21:39:48,858 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 21:39:49,793 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.196 seconds (process running for 1.686)
+2022-12-29 21:39:55,223 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Request alert infos for John Boyd
+2022-12-29 21:39:55,267 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:39:55,267 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:39:55,267 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:39:55,267 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:39:55,267 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:39:55,268 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-2] Person was born 1966-03-03T00:00:00.000+0100 and her age is 56
+2022-12-29 21:39:55,268 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-2] Return { persons=[PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=38, email='jaboyd@email.com', medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=33, email='drk@email.com', medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=9, email='tenz@email.com', medications=[], allergies=[peanut]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=5, email='jaboyd@email.com', medications=[], allergies=[]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=36, email='jaboyd@email.com', medications=[tetracyclaz:650mg], allergies=[xilliathal]}, PersonInfoAlertDTO{lastName='Boyd', address='112 Steppes Pl', age=56, email='aly@imail.com', medications=[aznol:200mg], allergies=[nillacilan]}]}
+2022-12-29 21:40:19,710 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Request alert infos for firestation number [1, 2, 3]
+2022-12-29 21:40:19,715 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Peter Duncan depends of firestation 1
+2022-12-29 21:40:19,715 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2000-06-09T00:00:00.000+0200 and her age is 22
+2022-12-29 21:40:19,715 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,715 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Reginold Walker depends of firestation 1
+2022-12-29 21:40:19,715 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1981-06-08T00:00:00.000+0200 and her age is 41
+2022-12-29 21:40:19,715 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,715 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Jamie Peters depends of firestation 1
+2022-12-29 21:40:19,716 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1982-06-03T00:00:00.000+0200 and her age is 40
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Brian Stelzer depends of firestation 1
+2022-12-29 21:40:19,716 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1975-06-12T00:00:00.000+0100 and her age is 47
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Shawna Stelzer depends of firestation 1
+2022-12-29 21:40:19,716 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1980-08-07T00:00:00.000+0200 and her age is 42
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Kendrik Stelzer depends of firestation 1
+2022-12-29 21:40:19,716 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2014-06-03T00:00:00.000+0200 and her age is 8
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,716 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Jonanathan Marrack depends of firestation 2
+2022-12-29 21:40:19,716 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1989-03-01T00:00:00.000+0100 and her age is 33
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Sophia Zemicks depends of firestation 2
+2022-12-29 21:40:19,717 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1988-06-03T00:00:00.000+0200 and her age is 34
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Warren Zemicks depends of firestation 2
+2022-12-29 21:40:19,717 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1985-06-03T00:00:00.000+0200 and her age is 37
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Zach Zemicks depends of firestation 2
+2022-12-29 21:40:19,717 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2017-06-03T00:00:00.000+0200 and her age is 5
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,717 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Eric Cadigan depends of firestation 2
+2022-12-29 21:40:19,717 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1945-06-08T00:00:00.000+0200 and her age is 77
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] John Boyd depends of firestation 3
+2022-12-29 21:40:19,718 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Jacob Boyd depends of firestation 3
+2022-12-29 21:40:19,718 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Tenley Boyd depends of firestation 3
+2022-12-29 21:40:19,718 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Roger Boyd depends of firestation 3
+2022-12-29 21:40:19,718 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,718 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Felicia Boyd depends of firestation 3
+2022-12-29 21:40:19,719 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:40:19,719 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,719 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Tessa Carman depends of firestation 3
+2022-12-29 21:40:19,719 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:40:19,719 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,719 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Foster Shepard depends of firestation 3
+2022-12-29 21:40:19,719 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1980-08-01T00:00:00.000+0200 and her age is 42
+2022-12-29 21:40:19,719 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,719 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Clive Ferguson depends of firestation 3
+2022-12-29 21:40:19,720 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1994-06-03T00:00:00.000+0200 and her age is 28
+2022-12-29 21:40:19,720 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Added to the selectedPersons list
+2022-12-29 21:40:19,720 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Sorting the list by address
+2022-12-29 21:40:19,720 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-3] Return { persons=[PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=38, medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6513', age=33, medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=9, medications=[], allergies=[peanut]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=5, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6544', age=36, medications=[tetracyclaz:650mg], allergies=[xilliathal]}, PersonFloodAlertDTO{lastName='Marrack', address='29 15th St', phone='841-874-6513', age=33, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Duncan', address='644 Gershwin Cir', phone='841-874-6512', age=22, medications=[], allergies=[shellfish]}, PersonFloodAlertDTO{lastName='Shepard', address='748 Townings Dr', phone='841-874-6544', age=42, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Ferguson', address='748 Townings Dr', phone='841-874-6741', age=28, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Carman', address='834 Binoc Ave', phone='841-874-6512', age=9, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7878', age=34, medications=[aznol:60mg, hydrapermazol:900mg, pharmacol:5000mg, terazine:500mg], allergies=[peanut, shellfish, aznol]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7512', age=37, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7512', age=5, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Walker', address='908 73rd St', phone='841-874-8547', age=41, medications=[thradox:700mg], allergies=[illisoxian]}, PersonFloodAlertDTO{lastName='Peters', address='908 73rd St', phone='841-874-7462', age=40, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=47, medications=[ibupurin:200mg, hydrapermazol:400mg], allergies=[nillacilan]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=42, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=8, medications=[noxidian:100mg, pharmacol:2500mg], allergies=[]}, PersonFloodAlertDTO{lastName='Cadigan', address='951 LoneTree Rd', phone='841-874-7458', age=77, medications=[tradoxidine:400mg], allergies=[]}]}
+2022-12-29 21:40:23,241 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-4] Request alert infos for this address : 1509 Culver St
+2022-12-29 21:40:23,244 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:40:23,245 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:40:23,245 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:40:23,245 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:40:23,245 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:40:23,245 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-4] Return ListPersonsFireAlertDTO{firestationNumber=3, persons=[PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=38, medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6513', age=33, medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=9, medications=[], allergies=[peanut]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=5, medications=[], allergies=[]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6544', age=36, medications=[tetracyclaz:650mg], allergies=[xilliathal]}]}
+2022-12-29 21:40:26,816 INFO c.s.a.c.PhoneAlertController [http-nio-8080-exec-5] Request phone numbers for firestation number 1
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] John Boyd depends of firestation number 3
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Jacob Boyd depends of firestation number 3
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Tenley Boyd depends of firestation number 3
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Roger Boyd depends of firestation number 3
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Felicia Boyd depends of firestation number 3
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Jonanathan Marrack depends of firestation number 2
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Tessa Carman depends of firestation number 3
+2022-12-29 21:40:26,819 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Peter Duncan depends of firestation number 1
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-6512 to the list
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Foster Shepard depends of firestation number 3
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Tony Cooper depends of firestation number 4
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Lily Cooper depends of firestation number 4
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Sophia Zemicks depends of firestation number 2
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Warren Zemicks depends of firestation number 2
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Zach Zemicks depends of firestation number 2
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Reginold Walker depends of firestation number 1
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-8547 to the list
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Jamie Peters depends of firestation number 1
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7462 to the list
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Ron Peters depends of firestation number 4
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Allison Boyd depends of firestation number 4
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Brian Stelzer depends of firestation number 1
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7784 to the list
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Shawna Stelzer depends of firestation number 1
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7784 to the list
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Kendrik Stelzer depends of firestation number 1
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7784 to the list
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Clive Ferguson depends of firestation number 3
+2022-12-29 21:40:26,820 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Eric Cadigan depends of firestation number 2
+2022-12-29 21:40:26,820 INFO c.s.a.c.PhoneAlertController [http-nio-8080-exec-5] Return {phoneAlertList=[{phone='841-874-6512'}, {phone='841-874-8547'}, {phone='841-874-7462'}, {phone='841-874-7784'}, {phone='841-874-7784'}, {phone='841-874-7784'}]}
+2022-12-29 21:40:30,531 INFO c.s.a.c.ChildAlertController [http-nio-8080-exec-6] Request alert infos for children living at 1509 Culver St
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] John Boyd live at 1509 Culver St
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Jacob Boyd live at 1509 Culver St
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Tenley Boyd live at 1509 Culver St
+2022-12-29 21:40:30,535 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Roger Boyd live at 1509 Culver St
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Felicia Boyd live at 1509 Culver St
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] This person is an adult
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] This person is an adult
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] This person is a child
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Tenley Boyd added to childrenList
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] This person is a child
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Roger Boyd added to childrenList
+2022-12-29 21:40:30,536 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] This person is an adult
+2022-12-29 21:40:30,539 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:40:30,539 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] John Boyd live at 1509 Culver St
+2022-12-29 21:40:30,539 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:40:30,539 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Jacob Boyd live at 1509 Culver St
+2022-12-29 21:40:30,539 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:40:30,540 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Tenley Boyd live at 1509 Culver St
+2022-12-29 21:40:30,540 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:40:30,540 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Roger Boyd live at 1509 Culver St
+2022-12-29 21:40:30,540 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:40:30,540 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Felicia Boyd live at 1509 Culver St
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] John Boyd live at 1509 Culver St
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Jacob Boyd live at 1509 Culver St
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Tenley Boyd live at 1509 Culver St
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Roger Boyd live at 1509 Culver St
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:40:30,543 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-6] Felicia Boyd live at 1509 Culver St
+2022-12-29 21:40:30,543 INFO c.s.a.c.ChildAlertController [http-nio-8080-exec-6] Return {childrenAndTheirFamily=[ChildAlertDTO{firstName='Tenley', lastName='Boyd', age=9, familyMembers=[ChildAlertDTO{firstName='John', lastName='Boyd', age=38, familyMembers=null}, ChildAlertDTO{firstName='Jacob', lastName='Boyd', age=33, familyMembers=null}, ChildAlertDTO{firstName='Roger', lastName='Boyd', age=5, familyMembers=null}, ChildAlertDTO{firstName='Felicia', lastName='Boyd', age=36, familyMembers=null}]}, ChildAlertDTO{firstName='Roger', lastName='Boyd', age=5, familyMembers=[ChildAlertDTO{firstName='John', lastName='Boyd', age=38, familyMembers=null}, ChildAlertDTO{firstName='Jacob', lastName='Boyd', age=33, familyMembers=null}, ChildAlertDTO{firstName='Tenley', lastName='Boyd', age=9, familyMembers=null}, ChildAlertDTO{firstName='Felicia', lastName='Boyd', age=36, familyMembers=null}]}]}
+2022-12-29 21:40:34,118 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-7] Request alert infos for firestation number 1
+2022-12-29 21:40:34,122 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] John Boyd depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Jacob Boyd depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Tenley Boyd depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Roger Boyd depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Felicia Boyd depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Jonanathan Marrack depends of firestation number 2
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Tessa Carman depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Peter Duncan depends of firestation number 1
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Add Peter Duncan to the list
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2000-06-09T00:00:00.000+0200 and her age is 22
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] This person is an adult
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Peter Duncan is an adult, adults counter = 1
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Foster Shepard depends of firestation number 3
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Tony Cooper depends of firestation number 4
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Lily Cooper depends of firestation number 4
+2022-12-29 21:40:34,123 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Sophia Zemicks depends of firestation number 2
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Warren Zemicks depends of firestation number 2
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Zach Zemicks depends of firestation number 2
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Reginold Walker depends of firestation number 1
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Add Reginold Walker to the list
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1981-06-08T00:00:00.000+0200 and her age is 41
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] This person is an adult
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Reginold Walker is an adult, adults counter = 2
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Jamie Peters depends of firestation number 1
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Add Jamie Peters to the list
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1982-06-03T00:00:00.000+0200 and her age is 40
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] This person is an adult
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Jamie Peters is an adult, adults counter = 3
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Ron Peters depends of firestation number 4
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Allison Boyd depends of firestation number 4
+2022-12-29 21:40:34,124 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Brian Stelzer depends of firestation number 1
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Add Brian Stelzer to the list
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1975-06-12T00:00:00.000+0100 and her age is 47
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] This person is an adult
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Brian Stelzer is an adult, adults counter = 4
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Shawna Stelzer depends of firestation number 1
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Add Shawna Stelzer to the list
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1980-08-07T00:00:00.000+0200 and her age is 42
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] This person is an adult
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Shawna Stelzer is an adult, adults counter = 5
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Kendrik Stelzer depends of firestation number 1
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Add Kendrik Stelzer to the list
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2014-06-03T00:00:00.000+0200 and her age is 8
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] This person is a child
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Kendrik Stelzer is a child, children counter = 1
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Clive Ferguson depends of firestation number 3
+2022-12-29 21:40:34,125 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-7] Eric Cadigan depends of firestation number 2
+2022-12-29 21:40:34,126 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-7] Return { children='1' adults='5' persons='[{ fistname='Peter' lastname='Duncan' adress='644 Gershwin Cir', phone='841-874-6512'}, { fistname='Reginold' lastname='Walker' adress='908 73rd St', phone='841-874-8547'}, { fistname='Jamie' lastname='Peters' adress='908 73rd St', phone='841-874-7462'}, { fistname='Brian' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Shawna' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Kendrik' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}]'}
+2022-12-29 21:54:31,507 INFO c.s.a.ApiApplication [main] Starting ApiApplication using Java 17.0.5 with PID 9708 (C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api\target\classes started by gaeta in C:\Users\gaeta\Documents\#Openclassroom\Formation JAVA\Projet 05\api)
+2022-12-29 21:54:31,513 DEBUG c.s.a.ApiApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-29 21:54:31,514 INFO c.s.a.ApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-29 21:54:32,458 INFO c.s.a.ApiApplication [main] Started ApiApplication in 1.208 seconds (process running for 1.702)
+2022-12-29 21:54:38,881 INFO c.s.a.c.CommunityEmailAlertController [http-nio-8080-exec-2] Request email for citizen of Culver
+2022-12-29 21:54:38,926 INFO c.s.a.c.CommunityEmailAlertController [http-nio-8080-exec-2] Return { communityEmailAlertList=[PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='drk@email.com'}, PersonCommunityEmailDTO{email='tenz@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='drk@email.com'}, PersonCommunityEmailDTO{email='tenz@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='tcoop@ymail.com'}, PersonCommunityEmailDTO{email='lily@email.com'}, PersonCommunityEmailDTO{email='soph@email.com'}, PersonCommunityEmailDTO{email='ward@email.com'}, PersonCommunityEmailDTO{email='zarc@email.com'}, PersonCommunityEmailDTO{email='reg@email.com'}, PersonCommunityEmailDTO{email='jpeter@email.com'}, PersonCommunityEmailDTO{email='jpeter@email.com'}, PersonCommunityEmailDTO{email='aly@imail.com'}, PersonCommunityEmailDTO{email='bstel@email.com'}, PersonCommunityEmailDTO{email='ssanw@email.com'}, PersonCommunityEmailDTO{email='bstel@email.com'}, PersonCommunityEmailDTO{email='clivfd@ymail.com'}, PersonCommunityEmailDTO{email='gramps@email.com'}]}
+2022-12-29 21:54:43,388 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-3] Request alert infos for firestation number 1
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] John Boyd depends of firestation number 3
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Jacob Boyd depends of firestation number 3
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Tenley Boyd depends of firestation number 3
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Roger Boyd depends of firestation number 3
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Felicia Boyd depends of firestation number 3
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Jonanathan Marrack depends of firestation number 2
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Tessa Carman depends of firestation number 3
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Peter Duncan depends of firestation number 1
+2022-12-29 21:54:43,393 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Add Peter Duncan to the list
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2000-06-09T00:00:00.000+0200 and her age is 22
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] This person is an adult
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Peter Duncan is an adult, adults counter = 1
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Foster Shepard depends of firestation number 3
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Tony Cooper depends of firestation number 4
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Lily Cooper depends of firestation number 4
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Sophia Zemicks depends of firestation number 2
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Warren Zemicks depends of firestation number 2
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Zach Zemicks depends of firestation number 2
+2022-12-29 21:54:43,394 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Reginold Walker depends of firestation number 1
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Add Reginold Walker to the list
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1981-06-08T00:00:00.000+0200 and her age is 41
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] This person is an adult
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Reginold Walker is an adult, adults counter = 2
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Jamie Peters depends of firestation number 1
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Add Jamie Peters to the list
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1982-06-03T00:00:00.000+0200 and her age is 40
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] This person is an adult
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Jamie Peters is an adult, adults counter = 3
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Ron Peters depends of firestation number 4
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Allison Boyd depends of firestation number 4
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Brian Stelzer depends of firestation number 1
+2022-12-29 21:54:43,395 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Add Brian Stelzer to the list
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1975-06-12T00:00:00.000+0100 and her age is 47
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] This person is an adult
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Brian Stelzer is an adult, adults counter = 4
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Shawna Stelzer depends of firestation number 1
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Add Shawna Stelzer to the list
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 1980-08-07T00:00:00.000+0200 and her age is 42
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] This person is an adult
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Shawna Stelzer is an adult, adults counter = 5
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Kendrik Stelzer depends of firestation number 1
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Add Kendrik Stelzer to the list
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] Person was born 2014-06-03T00:00:00.000+0200 and her age is 8
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-3] This person is a child
+2022-12-29 21:54:43,396 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Kendrik Stelzer is a child, children counter = 1
+2022-12-29 21:54:43,397 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Clive Ferguson depends of firestation number 3
+2022-12-29 21:54:43,397 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-3] Eric Cadigan depends of firestation number 2
+2022-12-29 21:54:43,397 INFO c.s.a.c.FirestationAlertController [http-nio-8080-exec-3] Return { children='1' adults='5' persons='[{ fistname='Peter' lastname='Duncan' adress='644 Gershwin Cir', phone='841-874-6512'}, { fistname='Reginold' lastname='Walker' adress='908 73rd St', phone='841-874-8547'}, { fistname='Jamie' lastname='Peters' adress='908 73rd St', phone='841-874-7462'}, { fistname='Brian' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Shawna' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}, { fistname='Kendrik' lastname='Stelzer' adress='947 E. Rose Dr', phone='841-874-7784'}]'}
+2022-12-29 21:54:46,716 INFO c.s.a.c.ChildAlertController [http-nio-8080-exec-4] Request alert infos for children living at 1509 Culver St
+2022-12-29 21:54:46,720 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:54:46,720 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] John Boyd live at 1509 Culver St
+2022-12-29 21:54:46,720 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:54:46,720 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Jacob Boyd live at 1509 Culver St
+2022-12-29 21:54:46,720 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Tenley Boyd live at 1509 Culver St
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Roger Boyd live at 1509 Culver St
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Felicia Boyd live at 1509 Culver St
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] This person is an adult
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] This person is an adult
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] This person is a child
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Tenley Boyd added to childrenList
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] This person is a child
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Roger Boyd added to childrenList
+2022-12-29 21:54:46,721 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] This person is an adult
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] John Boyd live at 1509 Culver St
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Jacob Boyd live at 1509 Culver St
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Tenley Boyd live at 1509 Culver St
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Roger Boyd live at 1509 Culver St
+2022-12-29 21:54:46,725 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:54:46,726 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Felicia Boyd live at 1509 Culver St
+2022-12-29 21:54:46,729 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:54:46,729 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] John Boyd live at 1509 Culver St
+2022-12-29 21:54:46,729 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:54:46,729 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Jacob Boyd live at 1509 Culver St
+2022-12-29 21:54:46,730 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:54:46,730 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Tenley Boyd live at 1509 Culver St
+2022-12-29 21:54:46,730 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:54:46,730 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Roger Boyd live at 1509 Culver St
+2022-12-29 21:54:46,730 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-4] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:54:46,730 DEBUG c.s.a.s.FirestationAlertService [http-nio-8080-exec-4] Felicia Boyd live at 1509 Culver St
+2022-12-29 21:54:46,730 INFO c.s.a.c.ChildAlertController [http-nio-8080-exec-4] Return {childrenAndTheirFamily=[ChildAlertDTO{firstName='Tenley', lastName='Boyd', age=9, familyMembers=[ChildAlertDTO{firstName='John', lastName='Boyd', age=38, familyMembers=null}, ChildAlertDTO{firstName='Jacob', lastName='Boyd', age=33, familyMembers=null}, ChildAlertDTO{firstName='Roger', lastName='Boyd', age=5, familyMembers=null}, ChildAlertDTO{firstName='Felicia', lastName='Boyd', age=36, familyMembers=null}]}, ChildAlertDTO{firstName='Roger', lastName='Boyd', age=5, familyMembers=[ChildAlertDTO{firstName='John', lastName='Boyd', age=38, familyMembers=null}, ChildAlertDTO{firstName='Jacob', lastName='Boyd', age=33, familyMembers=null}, ChildAlertDTO{firstName='Tenley', lastName='Boyd', age=9, familyMembers=null}, ChildAlertDTO{firstName='Felicia', lastName='Boyd', age=36, familyMembers=null}]}]}
+2022-12-29 21:54:50,973 INFO c.s.a.c.PhoneAlertController [http-nio-8080-exec-5] Request phone numbers for firestation number 1
+2022-12-29 21:54:50,976 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] John Boyd depends of firestation number 3
+2022-12-29 21:54:50,976 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Jacob Boyd depends of firestation number 3
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Tenley Boyd depends of firestation number 3
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Roger Boyd depends of firestation number 3
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Felicia Boyd depends of firestation number 3
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Jonanathan Marrack depends of firestation number 2
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Tessa Carman depends of firestation number 3
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Peter Duncan depends of firestation number 1
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-6512 to the list
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Foster Shepard depends of firestation number 3
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Tony Cooper depends of firestation number 4
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Lily Cooper depends of firestation number 4
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Sophia Zemicks depends of firestation number 2
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Warren Zemicks depends of firestation number 2
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Zach Zemicks depends of firestation number 2
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Reginold Walker depends of firestation number 1
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-8547 to the list
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Jamie Peters depends of firestation number 1
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7462 to the list
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Ron Peters depends of firestation number 4
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Allison Boyd depends of firestation number 4
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Brian Stelzer depends of firestation number 1
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7784 to the list
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Shawna Stelzer depends of firestation number 1
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7784 to the list
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Kendrik Stelzer depends of firestation number 1
+2022-12-29 21:54:50,977 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Add 841-874-7784 to the list
+2022-12-29 21:54:50,978 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Clive Ferguson depends of firestation number 3
+2022-12-29 21:54:50,978 DEBUG c.s.a.s.PhoneAlertService [http-nio-8080-exec-5] Eric Cadigan depends of firestation number 2
+2022-12-29 21:54:50,978 INFO c.s.a.c.PhoneAlertController [http-nio-8080-exec-5] Return {phoneAlertList=[{phone='841-874-6512'}, {phone='841-874-8547'}, {phone='841-874-7462'}, {phone='841-874-7784'}, {phone='841-874-7784'}, {phone='841-874-7784'}]}
+2022-12-29 21:54:53,974 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-6] Request alert infos for this address : 1509 Culver St
+2022-12-29 21:54:53,978 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:54:53,978 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:54:53,978 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:54:53,978 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:54:53,978 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-6] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:54:53,978 INFO c.s.a.c.FireAlertController [http-nio-8080-exec-6] Return ListPersonsFireAlertDTO{firestationNumber=3, persons=[PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=38, medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6513', age=33, medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=9, medications=[], allergies=[peanut]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6512', age=5, medications=[], allergies=[]}, PersonFireALertDTO{lastName='Boyd', phone='841-874-6544', age=36, medications=[tetracyclaz:650mg], allergies=[xilliathal]}]}
+2022-12-29 21:54:57,229 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Request alert infos for firestation number [1, 2, 3]
+2022-12-29 21:54:57,232 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Peter Duncan depends of firestation 1
+2022-12-29 21:54:57,232 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2000-06-09T00:00:00.000+0200 and her age is 22
+2022-12-29 21:54:57,232 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,232 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Reginold Walker depends of firestation 1
+2022-12-29 21:54:57,232 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1981-06-08T00:00:00.000+0200 and her age is 41
+2022-12-29 21:54:57,232 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,232 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Jamie Peters depends of firestation 1
+2022-12-29 21:54:57,233 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1982-06-03T00:00:00.000+0200 and her age is 40
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Brian Stelzer depends of firestation 1
+2022-12-29 21:54:57,233 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1975-06-12T00:00:00.000+0100 and her age is 47
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Shawna Stelzer depends of firestation 1
+2022-12-29 21:54:57,233 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1980-08-07T00:00:00.000+0200 and her age is 42
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Kendrik Stelzer depends of firestation 1
+2022-12-29 21:54:57,233 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2014-06-03T00:00:00.000+0200 and her age is 8
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,233 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Jonanathan Marrack depends of firestation 2
+2022-12-29 21:54:57,234 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1989-03-01T00:00:00.000+0100 and her age is 33
+2022-12-29 21:54:57,234 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,234 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Sophia Zemicks depends of firestation 2
+2022-12-29 21:54:57,234 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1988-06-03T00:00:00.000+0200 and her age is 34
+2022-12-29 21:54:57,234 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,234 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Warren Zemicks depends of firestation 2
+2022-12-29 21:54:57,234 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1985-06-03T00:00:00.000+0200 and her age is 37
+2022-12-29 21:54:57,234 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,234 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Zach Zemicks depends of firestation 2
+2022-12-29 21:54:57,234 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2017-06-03T00:00:00.000+0200 and her age is 5
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Eric Cadigan depends of firestation 2
+2022-12-29 21:54:57,235 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1945-06-08T00:00:00.000+0200 and her age is 77
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] John Boyd depends of firestation 3
+2022-12-29 21:54:57,235 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Jacob Boyd depends of firestation 3
+2022-12-29 21:54:57,235 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,235 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Tenley Boyd depends of firestation 3
+2022-12-29 21:54:57,235 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Roger Boyd depends of firestation 3
+2022-12-29 21:54:57,236 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Felicia Boyd depends of firestation 3
+2022-12-29 21:54:57,236 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Tessa Carman depends of firestation 3
+2022-12-29 21:54:57,236 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,236 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Foster Shepard depends of firestation 3
+2022-12-29 21:54:57,236 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1980-08-01T00:00:00.000+0200 and her age is 42
+2022-12-29 21:54:57,237 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,237 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Clive Ferguson depends of firestation 3
+2022-12-29 21:54:57,237 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-7] Person was born 1994-06-03T00:00:00.000+0200 and her age is 28
+2022-12-29 21:54:57,237 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Added to the selectedPersons list
+2022-12-29 21:54:57,237 DEBUG c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Sorting the list by address
+2022-12-29 21:54:57,237 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-7] Return { persons=[PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=38, medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6513', age=33, medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=9, medications=[], allergies=[peanut]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6512', age=5, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Boyd', address='1509 Culver St', phone='841-874-6544', age=36, medications=[tetracyclaz:650mg], allergies=[xilliathal]}, PersonFloodAlertDTO{lastName='Marrack', address='29 15th St', phone='841-874-6513', age=33, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Duncan', address='644 Gershwin Cir', phone='841-874-6512', age=22, medications=[], allergies=[shellfish]}, PersonFloodAlertDTO{lastName='Shepard', address='748 Townings Dr', phone='841-874-6544', age=42, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Ferguson', address='748 Townings Dr', phone='841-874-6741', age=28, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Carman', address='834 Binoc Ave', phone='841-874-6512', age=9, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7878', age=34, medications=[aznol:60mg, hydrapermazol:900mg, pharmacol:5000mg, terazine:500mg], allergies=[peanut, shellfish, aznol]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7512', age=37, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Zemicks', address='892 Downing Ct', phone='841-874-7512', age=5, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Walker', address='908 73rd St', phone='841-874-8547', age=41, medications=[thradox:700mg], allergies=[illisoxian]}, PersonFloodAlertDTO{lastName='Peters', address='908 73rd St', phone='841-874-7462', age=40, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=47, medications=[ibupurin:200mg, hydrapermazol:400mg], allergies=[nillacilan]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=42, medications=[], allergies=[]}, PersonFloodAlertDTO{lastName='Stelzer', address='947 E. Rose Dr', phone='841-874-7784', age=8, medications=[noxidian:100mg, pharmacol:2500mg], allergies=[]}, PersonFloodAlertDTO{lastName='Cadigan', address='951 LoneTree Rd', phone='841-874-7458', age=77, medications=[tradoxidine:400mg], allergies=[]}]}
+2022-12-29 21:55:00,554 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-8] Request alert infos for John Boyd
+2022-12-29 21:55:00,557 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-8] Person was born 1984-06-03T00:00:00.000+0200 and her age is 38
+2022-12-29 21:55:00,558 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-8] Person was born 1989-06-03T00:00:00.000+0200 and her age is 33
+2022-12-29 21:55:00,558 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-8] Person was born 2013-06-02T00:00:00.000+0200 and her age is 9
+2022-12-29 21:55:00,558 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-8] Person was born 2017-06-09T00:00:00.000+0200 and her age is 5
+2022-12-29 21:55:00,558 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-8] Person was born 1986-08-01T00:00:00.000+0200 and her age is 36
+2022-12-29 21:55:00,558 DEBUG c.s.a.s.PersonService [http-nio-8080-exec-8] Person was born 1966-03-03T00:00:00.000+0100 and her age is 56
+2022-12-29 21:55:00,558 INFO c.s.a.c.FloodAlertController [http-nio-8080-exec-8] Return { persons=[PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=38, email='jaboyd@email.com', medications=[aznol:350mg, hydrapermazol:100mg], allergies=[nillacilan]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=33, email='drk@email.com', medications=[pharmacol:5000mg, terazine:10mg, noznazol:250mg], allergies=[]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=9, email='tenz@email.com', medications=[], allergies=[peanut]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=5, email='jaboyd@email.com', medications=[], allergies=[]}, PersonInfoAlertDTO{lastName='Boyd', address='1509 Culver St', age=36, email='jaboyd@email.com', medications=[tetracyclaz:650mg], allergies=[xilliathal]}, PersonInfoAlertDTO{lastName='Boyd', address='112 Steppes Pl', age=56, email='aly@imail.com', medications=[aznol:200mg], allergies=[nillacilan]}]}
+2022-12-29 21:55:03,835 INFO c.s.a.c.CommunityEmailAlertController [http-nio-8080-exec-9] Request email for citizen of Culver
+2022-12-29 21:55:03,838 INFO c.s.a.c.CommunityEmailAlertController [http-nio-8080-exec-9] Return { communityEmailAlertList=[PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='drk@email.com'}, PersonCommunityEmailDTO{email='tenz@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='drk@email.com'}, PersonCommunityEmailDTO{email='tenz@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='jaboyd@email.com'}, PersonCommunityEmailDTO{email='tcoop@ymail.com'}, PersonCommunityEmailDTO{email='lily@email.com'}, PersonCommunityEmailDTO{email='soph@email.com'}, PersonCommunityEmailDTO{email='ward@email.com'}, PersonCommunityEmailDTO{email='zarc@email.com'}, PersonCommunityEmailDTO{email='reg@email.com'}, PersonCommunityEmailDTO{email='jpeter@email.com'}, PersonCommunityEmailDTO{email='jpeter@email.com'}, PersonCommunityEmailDTO{email='aly@imail.com'}, PersonCommunityEmailDTO{email='bstel@email.com'}, PersonCommunityEmailDTO{email='ssanw@email.com'}, PersonCommunityEmailDTO{email='bstel@email.com'}, PersonCommunityEmailDTO{email='clivfd@ymail.com'}, PersonCommunityEmailDTO{email='gramps@email.com'}]}

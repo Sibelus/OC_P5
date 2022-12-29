@@ -8,12 +8,13 @@ import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service
-public class FloodAlertService {
+@Component("floodAlert")
+public class FloodAlertService implements IAlertService{
 
     private static final Logger logger = LogManager.getLogger(FloodAlertController.class);
 
@@ -22,7 +23,9 @@ public class FloodAlertService {
     @Autowired
     PersonService personService;
 
-    public ListPersonsFloodAlertDTO getFloodAlert(List<Integer> listFirestationNumber){
+    @Override
+    public Object getAlert(Object ... object) {
+        List<Integer> listFirestationNumber = (List<Integer>) object[0];
         ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
         ArrayList<PersonFloodAlertDTO> selectedPersons = new ArrayList<>();
 

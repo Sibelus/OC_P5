@@ -7,13 +7,14 @@ import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-@Service
-public class ChildAlertService {
+@Component("childAlert")
+public class ChildAlertService implements IAlertService{
 
     private static final Logger logger = LogManager.getLogger(FirestationAlertService.class);
 
@@ -22,6 +23,7 @@ public class ChildAlertService {
     @Autowired
     private PersonService personService;
 
+    /*
     public ListPersonsChildAlertDTO getChildAlert(String address){
 
         ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
@@ -37,7 +39,7 @@ public class ChildAlertService {
 
         listPersonsChildAlertDTO.setChildrenAndTheirFamily(childrenList);
         return listPersonsChildAlertDTO;
-    }
+    }*/
 
 
     private ArrayList<PersonChildAlertDTO> getResident(String address){
@@ -73,5 +75,24 @@ public class ChildAlertService {
             }
         }
         return childrenList;
+    }
+
+    @Override
+    public Object getAlert(Object ... object) {
+
+        String address = (String) object[0];
+        ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
+
+        ArrayList<PersonChildAlertDTO> allResident = getResident(address);
+        ArrayList<PersonChildAlertDTO> childrenList = getChildrenList(allResident);
+
+        for(PersonChildAlertDTO child : childrenList){
+            ArrayList<PersonChildAlertDTO> familyMember = getResident(address);
+            familyMember.remove(child);
+            child.setOtherFamillyMembers(familyMember);
+        }
+
+        listPersonsChildAlertDTO.setChildrenAndTheirFamily(childrenList);
+        return listPersonsChildAlertDTO;
     }
 }
