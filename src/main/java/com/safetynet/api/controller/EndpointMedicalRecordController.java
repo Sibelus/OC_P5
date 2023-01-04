@@ -25,32 +25,32 @@ public class EndpointMedicalRecordController {
 
     @PostMapping(value = "/medicalRecord")
     public ResponseEntity<Medicalrecord> createMedicalRecord(@RequestBody Medicalrecord medicalrecord) {
-        logger.debug("Request create a new {}", medicalrecord);
+        logger.info("Request create a new {}", medicalrecord);
         Medicalrecord medicalRecordAdded = (Medicalrecord) endpointMedicalRecordService.create(medicalrecord);
         if (Objects.isNull(medicalRecordAdded)) {
             logger.error("Null object provided : {}", medicalrecord);
             return ResponseEntity.noContent().build();
         }
 
-        logger.debug("Return {}",ResponseEntity.created(URI.create("/medicalRecord")).body(medicalRecordAdded));
+        logger.info("Return {}",ResponseEntity.created(URI.create("/medicalRecord")).body(medicalRecordAdded));
         return ResponseEntity.created(URI.create("/medicalRecord")).body(medicalRecordAdded);
     }
 
 
     @PutMapping(value = "/medicalRecord")
     public Medicalrecord updateMedicalrecord(@RequestBody Medicalrecord medicalrecord) {
-        logger.debug("Request update {} {}'s medical record", medicalrecord.getFirstName(), medicalrecord.getLastName());
+        logger.info("Request update {} {}'s medical record", medicalrecord.getFirstName(), medicalrecord.getLastName());
         Medicalrecord updatedMedicalrecord = (Medicalrecord) endpointMedicalRecordService.update(medicalrecord);
-        logger.debug("Return {}", updatedMedicalrecord);
+        logger.info("Return {}", updatedMedicalrecord);
         return updatedMedicalrecord;
     }
 
 
     @DeleteMapping(value = "/medicalRecord")
     public Medicalrecord deleteMedicalrecord(@RequestBody Medicalrecord medicalrecord) {
-        logger.debug("Request delete {} {}'s medical record ", medicalrecord.getFirstName(), medicalrecord.getLastName());
+        logger.info("Request delete {} {}'s medical record ", medicalrecord.getFirstName(), medicalrecord.getLastName());
         Medicalrecord deletedMedicalrecord = (Medicalrecord) endpointMedicalRecordService.delete(medicalrecord);
-        logger.debug("Return {} {}'s medical record was deleted", deletedMedicalrecord.getFirstName(), deletedMedicalrecord.getLastName());
+        logger.info("Return {} {}'s medical record was deleted", deletedMedicalrecord.getFirstName(), deletedMedicalrecord.getLastName());
         return deletedMedicalrecord;
     }
 }

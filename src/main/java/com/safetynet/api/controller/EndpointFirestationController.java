@@ -25,31 +25,32 @@ public class EndpointFirestationController {
 
     @PostMapping(value = "/firestation")
     public ResponseEntity<Firestation> createFirestation(@RequestBody Firestation firestation) {
-        logger.debug("Request create a new {}", firestation);
+        logger.info("Request create a new {}", firestation);
         Firestation firestationAdded = (Firestation) endpointFirestationService.create(firestation);
         if (Objects.isNull(firestationAdded)) {
+            logger.error("Null object provided : {}", firestation);
             return ResponseEntity.noContent().build();
         }
 
-        logger.debug("Return {}",ResponseEntity.created(URI.create("/firestation")).body(firestationAdded));
+        logger.info("Return {}",ResponseEntity.created(URI.create("/firestation")).body(firestationAdded));
         return ResponseEntity.created(URI.create("/firestation")).body(firestationAdded);
     }
 
 
     @PutMapping(value = "/firestation")
     public Firestation updateFirestation(@RequestBody Firestation firestation) {
-        logger.debug("Request update firestation number {}", firestation.getStation());
+        logger.info("Request update firestation number {}", firestation.getStation());
         Firestation updatedFirestation = (Firestation) endpointFirestationService.update(firestation);
-        logger.debug("Return {}", updatedFirestation);
+        logger.info("Return {}", updatedFirestation);
         return updatedFirestation;
     }
 
 
     @DeleteMapping(value = "/firestation")
     public Firestation deleteFirestation(@RequestBody Firestation firestation) {
-        logger.debug("Request delete firestation number {} : {} infos", firestation.getStation(), firestation.getAddress());
+        logger.info("Request delete firestation number {} : {} infos", firestation.getStation(), firestation.getAddress());
         Firestation deletedFirestation = (Firestation) endpointFirestationService.delete(firestation);
-        logger.debug("Return firestation number {} : {} was deleted", deletedFirestation.getStation(), deletedFirestation.getAddress());
+        logger.info("Return firestation number {} : {} was deleted", deletedFirestation.getStation(), deletedFirestation.getAddress());
         return deletedFirestation;
     }
 }

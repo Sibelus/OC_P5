@@ -28,7 +28,7 @@ public class EndpointPersonController {
 
     @PostMapping(value = "/person")
     public ResponseEntity<Person> createPerson(@RequestBody Person person){
-        logger.debug("Request create a new {}", person);
+        logger.info("Request create a new {}", person);
         Person personAdded = (Person) endpointPersonService.create(person);
         if (Objects.isNull(personAdded)) {
             logger.error("Null object provided : {}", person);
@@ -61,18 +61,18 @@ public class EndpointPersonController {
 
     @PutMapping(value = "/person")
     public Person updatePerson(@RequestBody Person person) {
-        logger.debug("Request update {} {} infos", person.getFirstName(), person.getLastName());
+        logger.info("Request update {} {} infos", person.getFirstName(), person.getLastName());
         Person updatedPerson = (Person) endpointPersonService.update(person);
-        logger.debug("Return {}", updatedPerson);
+        logger.info("Return {}", updatedPerson);
         return updatedPerson;
     }
 
 
     @DeleteMapping(value = "/person")
     public Person deletePerson(@RequestBody Person person) {
-        logger.debug("Request delete {} {} infos", person.getFirstName(), person.getLastName());
+        logger.info("Request delete {} {} infos", person.getFirstName(), person.getLastName());
         Person deletedPerson = (Person) endpointPersonService.delete(person);
-        logger.debug("Return {} {} was deleted", deletedPerson.getFirstName(), deletedPerson.getLastName());
+        logger.info("Return {} {} was deleted", deletedPerson.getFirstName(), deletedPerson.getLastName());
         return deletedPerson;
     }
 }
