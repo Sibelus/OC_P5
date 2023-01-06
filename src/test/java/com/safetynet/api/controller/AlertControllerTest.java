@@ -4,7 +4,6 @@ import com.safetynet.api.service.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -24,19 +23,19 @@ public class AlertControllerTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private FirestationAlertService firestationAlertService;
+    private IFirestationAlertService firestationAlertService;
     @MockBean
-    private ChildAlertService childAlertService;
+    private IChildAlertService childAlertService;
     @MockBean
-    private PhoneAlertService phoneAlertService;
+    private IPhoneAlertService phoneAlertService;
     @MockBean
-    private FireAlertService fireAlertService;
+    private IFireAlertService fireAlertService;
     @MockBean
-    private FloodAlertService floodAlertService;
+    private IFloodAlertService floodAlertService;
     @MockBean
-    private PersonInfoAlertService personInfoAlertService;
+    private IPersonInfoAlertService personInfoAlertService;
     @MockBean
-    private CommunityEmailAlertService communityEmailAlertService;
+    private ICommunityEmailAlertService communityEmailAlertService;
 
 
     @Test
