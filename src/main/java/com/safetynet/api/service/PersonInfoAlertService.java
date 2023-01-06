@@ -9,12 +9,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-@Component("personInfoAlert")
-public class PersonInfoAlertService implements IAlertService{
+@Component()
+public class PersonInfoAlertService implements IPersonInfoAlertService{
 
     private static final Logger logger = LogManager.getLogger(FloodAlertController.class);
 
@@ -36,9 +35,7 @@ public class PersonInfoAlertService implements IAlertService{
     }
 
     @Override
-    public Object getAlert(Object... object) {
-        String firstName = (String) object[0];
-        String lastName = (String) object[1];
+    public ListPersonsPersonInfoAlertDTO getAlert(String firstName, String lastName) {
         ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
         ArrayList<PersonInfoAlertDTO> selectedPersons = new ArrayList<>();
 
