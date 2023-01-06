@@ -8,24 +8,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-@Component("phoneAlert")
-public class PhoneAlertService implements IAlertService{
+@Component()
+public class PhoneAlertService implements IPhoneAlertService{
 
     private static final Logger logger = LogManager.getLogger(PhoneAlertService.class);
 
     @Autowired
     private PersonRepository personRepository;
-    @Autowired
-    private ListePersonsPhoneAlertDTO listePersonsPhoneAlertDTO;
 
     @Override
-    public Object getAlert(Object ... object) {
-        int firestationNumber = (int) object[0];
+    public ListePersonsPhoneAlertDTO getAlert(int firestationNumber) {
         ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
         ArrayList<PersonPhoneAlertDTO> selectedPersons = new ArrayList<>();
 
@@ -38,6 +34,7 @@ public class PhoneAlertService implements IAlertService{
                 logger.debug("Add {} to the list", personPhoneAlertDTO.getPhone());
             }
         }
+        ListePersonsPhoneAlertDTO listePersonsPhoneAlertDTO = new ListePersonsPhoneAlertDTO();
         listePersonsPhoneAlertDTO.setPhoneAlertList(selectedPersons);
         return listePersonsPhoneAlertDTO;
     }
