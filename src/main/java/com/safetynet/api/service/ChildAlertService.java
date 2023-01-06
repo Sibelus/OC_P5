@@ -8,13 +8,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-@Component("childAlert")
-public class ChildAlertService implements IAlertService{
+@Component()
+public class ChildAlertService implements IChildAlertService{
 
     private static final Logger logger = LogManager.getLogger(FirestationAlertService.class);
 
@@ -60,9 +59,8 @@ public class ChildAlertService implements IAlertService{
     }
 
     @Override
-    public Object getAlert(Object ... object) {
+    public ListPersonsChildAlertDTO getAlert(String address) {
 
-        String address = (String) object[0];
         ListPersonsChildAlertDTO listPersonsChildAlertDTO = new ListPersonsChildAlertDTO();
 
         ArrayList<PersonChildAlertDTO> allResident = getResident(address);
