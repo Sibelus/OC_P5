@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
 @Component("medical record")
-public class EndpointMedicalRecordService implements IEndpointService {
+public class EndpointMedicalRecordService implements IEndpointMedicalRecordService {
 
     private static final Logger logger = LogManager.getLogger(EndpointMedicalRecordService.class);
 
@@ -18,10 +18,8 @@ public class EndpointMedicalRecordService implements IEndpointService {
     PersonRepository personRepository;
 
     @Override
-    public Object create(Object object) {
+    public Medicalrecord create(Medicalrecord medicalrecord) {
         ArrayList<Medicalrecord> allMedicalrecords = personRepository.getMedicalrecordsData();
-        //Cast object to MedicalRecord class
-        Medicalrecord medicalrecord = (Medicalrecord) object;
         allMedicalrecords.add(medicalrecord);
         logger.debug("Create {}", medicalrecord);
         return medicalrecord;
@@ -29,9 +27,7 @@ public class EndpointMedicalRecordService implements IEndpointService {
 
 
     @Override
-    public Object update(Object object) {
-        //Cast object to MedicalRecord class
-        Medicalrecord medicalrecord = (Medicalrecord) object;
+    public Medicalrecord update(Medicalrecord medicalrecord) {
         if(medicalrecord.getFirstName() == null || medicalrecord.getFirstName().equals("")){
             logger.error("Firstname provided is null or empty");
             throw new IllegalArgumentException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
@@ -55,9 +51,7 @@ public class EndpointMedicalRecordService implements IEndpointService {
 
 
     @Override
-    public Object delete(Object object) {
-        //Cast object to MedicalRecord class
-        Medicalrecord medicalrecord = (Medicalrecord) object;
+    public String delete(Medicalrecord medicalrecord) {
         if(medicalrecord.getFirstName() == null || medicalrecord.getFirstName().equals("")){
             logger.error("Firstname provided is null or empty");
             throw new IllegalArgumentException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
@@ -75,6 +69,6 @@ public class EndpointMedicalRecordService implements IEndpointService {
                 logger.debug("Delete {} infos", m);
             }
         }
-        return medicalrecord;
+        return "medicalrecord for " + medicalrecord.getFirstName() + " " + medicalrecord.getLastName() + " was successfully deleted";
     }
 }
