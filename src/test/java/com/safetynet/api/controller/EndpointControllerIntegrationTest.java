@@ -13,8 +13,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -115,7 +114,7 @@ public class EndpointControllerIntegrationTest {
 
         mockMvc.perform(delete("/person").content(asJsonString(person)).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.firstName", is("John")));
+                .andExpect(content().string(person.getFirstName() + " " + person.getLastName() + " was successfully deleted "));
     }
 
     @Test
@@ -125,7 +124,7 @@ public class EndpointControllerIntegrationTest {
 
         mockMvc.perform(delete("/firestation").content(asJsonString(firestation)).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.station", is(3)));
+                .andExpect(content().string("Firestation was successfully deleted"));
     }
 
     @Test
@@ -135,7 +134,7 @@ public class EndpointControllerIntegrationTest {
 
         mockMvc.perform(delete("/firestation").content(asJsonString(firestation)).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.address", is("1509 Culver St")));
+                .andExpect(content().string("Firestation was successfully deleted"));
     }
 
     @Test
@@ -147,6 +146,6 @@ public class EndpointControllerIntegrationTest {
 
         mockMvc.perform(delete("/medicalRecord").content(asJsonString(medicalrecord)).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.firstName", is("John")));
+                .andExpect(content().string("medicalrecord for " + medicalrecord.getFirstName() + " " + medicalrecord.getLastName() + " was successfully deleted"));
     }
 }
