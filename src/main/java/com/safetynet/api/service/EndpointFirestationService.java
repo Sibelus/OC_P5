@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 @Component("firestation")
-public class EndpointFirestationService implements IEndpointService {
+public class EndpointFirestationService implements IEndpointFirestationService {
 
     private static final Logger logger = LogManager.getLogger(EndpointFirestationService.class);
 
@@ -19,20 +19,15 @@ public class EndpointFirestationService implements IEndpointService {
     PersonRepository personRepository;
 
     @Override
-    public Object create(Object object) {
+    public Firestation create(Firestation firestation) {
         ArrayList<Firestation> allFirestations = personRepository.getFirestationsData();
-        //Cast object to firestation class
-        Firestation firestation = (Firestation) object;
         allFirestations.add(firestation);
         logger.debug("Create firestation number {} : {}", firestation.getStation(), firestation.getAddress());
         return firestation;
     }
 
     @Override
-    public Object update(Object object) {
-        //Cast object to firestation class
-        Firestation firestation = (Firestation) object;
-
+    public Firestation update(Firestation firestation) {
         ArrayList<Firestation> allFirestations = personRepository.getFirestationsData();
         for (Firestation f : allFirestations) {
             if (Objects.equals(f.getAddress(), firestation.getAddress())) {
@@ -44,9 +39,7 @@ public class EndpointFirestationService implements IEndpointService {
     }
 
     @Override
-    public Object delete(Object object) {
-        //Cast object to firestation class
-        Firestation firestation = (Firestation) object;
+    public String delete(Firestation firestation) {
         ArrayList<Firestation> allFirestations = personRepository.getFirestationsData();
         ArrayList<Firestation> newFirestationsLIst = personRepository.getFirestationsData();
 
@@ -60,6 +53,6 @@ public class EndpointFirestationService implements IEndpointService {
                 logger.debug("Delete address mapping {} for firestation number {}", f.getAddress(), f.getStation());
             }
         }
-        return firestation;
+        return "Firestation was successfully deleted";
     }
 }

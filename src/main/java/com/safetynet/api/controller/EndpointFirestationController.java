@@ -1,11 +1,10 @@
 package com.safetynet.api.controller;
 
 import com.safetynet.api.model.Firestation;
-import com.safetynet.api.service.IEndpointService;
+import com.safetynet.api.service.IEndpointFirestationService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,15 +17,14 @@ public class EndpointFirestationController {
     private static final Logger logger = LogManager.getLogger(EndpointFirestationController.class);
 
     @Autowired
-    @Qualifier(value = "firestation")
-    IEndpointService endpointFirestationService;
+    IEndpointFirestationService endpointFirestationService;
 
 
 
     @PostMapping(value = "/firestation")
     public ResponseEntity<Firestation> createFirestation(@RequestBody Firestation firestation) {
         logger.info("Request create a new {}", firestation);
-        Firestation firestationAdded = (Firestation) endpointFirestationService.create(firestation);
+        Firestation firestationAdded = endpointFirestationService.create(firestation);
         if (Objects.isNull(firestationAdded)) {
             logger.error("Null object provided : {}", firestation);
             return ResponseEntity.noContent().build();
@@ -40,17 +38,17 @@ public class EndpointFirestationController {
     @PutMapping(value = "/firestation")
     public Firestation updateFirestation(@RequestBody Firestation firestation) {
         logger.info("Request update firestation number {}", firestation.getStation());
-        Firestation updatedFirestation = (Firestation) endpointFirestationService.update(firestation);
+        Firestation updatedFirestation = endpointFirestationService.update(firestation);
         logger.info("Return {}", updatedFirestation);
         return updatedFirestation;
     }
 
 
     @DeleteMapping(value = "/firestation")
-    public Firestation deleteFirestation(@RequestBody Firestation firestation) {
+    public String deleteFirestation(@RequestBody Firestation firestation) {
         logger.info("Request delete firestation number {} : {} infos", firestation.getStation(), firestation.getAddress());
-        Firestation deletedFirestation = (Firestation) endpointFirestationService.delete(firestation);
-        logger.info("Return firestation number {} : {} was deleted", deletedFirestation.getStation(), deletedFirestation.getAddress());
+        String deletedFirestation = endpointFirestationService.delete(firestation);
+        logger.info("Return firestation number {} : {} was deleted", firestation.getStation(), firestation.getAddress());
         return deletedFirestation;
     }
 }
