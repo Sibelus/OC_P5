@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
 @Component("person")
-public class EndpointPersonService implements IEndpointService {
+public class EndpointPersonService implements IEndpointPersonService {
 
     private static final Logger logger = LogManager.getLogger(EndpointPersonService.class);
 
@@ -21,10 +21,8 @@ public class EndpointPersonService implements IEndpointService {
 
 
     @Override
-    public Object create(Object object) {
+    public Person create(Person person) {
         ArrayList<Person> allPersons = personRepository.getPersonsData();
-        //Cast object to Person class
-        Person person = (Person) object;
         allPersons.add(person);
         logger.debug("{} {} is a new citizen of {}", person.getFirstName(), person.getLastName(), person.getCity());
         return person;
@@ -32,9 +30,7 @@ public class EndpointPersonService implements IEndpointService {
 
 
     @Override
-    public Object update(Object object) {
-        //Cast object to Person class
-        Person person = (Person) object;
+    public Person update(Person person) {
         if(person.getFirstName() == null || person.getFirstName().equals("")){
             logger.error("Firstname provided is null or empty");
             throw new IllegalArgumentException("Firstname provided is incorrect: " + person.getFirstName());
@@ -60,9 +56,7 @@ public class EndpointPersonService implements IEndpointService {
 
 
     @Override
-    public Object delete(Object object) {
-        //Cast object to Person class
-        Person person = (Person) object;
+    public String delete(Person person) {
         if(person.getFirstName() == null || person.getFirstName().equals("")){
             logger.error("Firstname provided is null or empty");
             throw new IllegalArgumentException("Firstname provided is incorrect: " + person.getFirstName());
@@ -80,6 +74,6 @@ public class EndpointPersonService implements IEndpointService {
                 logger.debug("Delete {} {} personal infos", p.getFirstName(), p.getLastName());
             }
         }
-        return person;
+        return person.getFirstName() + " " + person.getLastName() + " was successfully deleted ";
     }
 }
