@@ -27,7 +27,7 @@ public class EndpointPersonController {
         logger.info("Request create a new {}", person);
         Person personAdded = endpointPersonService.create(person);
         if (Objects.isNull(personAdded)) {
-            logger.error("Null object provided : {}", person);
+            logger.error("Null object provided : {}", personAdded);
             return ResponseEntity.noContent().build();
         }
 

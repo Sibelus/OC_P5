@@ -26,7 +26,7 @@ public class EndpointFirestationController {
         logger.info("Request create a new {}", firestation);
         Firestation firestationAdded = endpointFirestationService.create(firestation);
         if (Objects.isNull(firestationAdded)) {
-            logger.error("Null object provided : {}", firestation);
+            logger.error("Null object provided : {}", firestationAdded);
             return ResponseEntity.noContent().build();
         }
 

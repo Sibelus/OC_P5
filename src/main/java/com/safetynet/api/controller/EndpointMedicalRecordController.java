@@ -26,7 +26,7 @@ public class EndpointMedicalRecordController {
         logger.info("Request create a new {}", medicalrecord);
         Medicalrecord medicalRecordAdded = endpointMedicalRecordService.create(medicalrecord);
         if (Objects.isNull(medicalRecordAdded)) {
-            logger.error("Null object provided : {}", medicalrecord);
+            logger.error("Null object provided : {}", medicalRecordAdded);
             return ResponseEntity.noContent().build();
         }
 
