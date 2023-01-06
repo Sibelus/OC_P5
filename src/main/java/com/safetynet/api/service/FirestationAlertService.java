@@ -8,15 +8,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 
 
-@Component("firestationAlert")
-public class FirestationAlertService implements IAlertService{
+@Component()
+public class FirestationAlertService implements IFirestationAlertService{
 
     private static final Logger logger = LogManager.getLogger(FirestationAlertService.class);
 
@@ -26,10 +25,8 @@ public class FirestationAlertService implements IAlertService{
     private PersonRepository personRepository;
 
     @Override
-    public Object getAlert(Object ... object) {
+    public ListPersonsFirestationAlertDTO getAlert(int firestationNumber) {
 
-        //Cast object to integer
-        int firestationNumber = (int) object[0];
         ArrayList<Person> allPersons = personRepository.getPersonsAggregatedData();
         ArrayList<PersonFirestationAlertDTO> selectedPersons = new ArrayList<>();
 
