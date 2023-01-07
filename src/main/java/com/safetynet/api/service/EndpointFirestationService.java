@@ -4,6 +4,7 @@ import com.safetynet.api.model.Firestation;
 import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +20,20 @@ public class EndpointFirestationService implements IEndpointFirestationService {
     PersonRepository personRepository;
 
     @Override
-    public Firestation create(Firestation firestation) {
+    public Firestation create(@NotNull Firestation firestation) {
+        if(firestation.getAddress() == null){
+            logger.error("Address provided is null");
+            throw new NullPointerException("Address provided is incorrect: " + firestation.getAddress());
+        }
+        if(firestation.getAddress().equals("")){
+            logger.error("Address provided is empty");
+            throw new IllegalArgumentException("Address provided is incorrect: " + firestation.getAddress());
+        }
+        if(firestation.getStation() < 0){
+            logger.error("Negative Station number provided");
+            throw new IllegalArgumentException("Station number provided is incorrect: " + firestation.getAddress());
+        }
+
         ArrayList<Firestation> allFirestations = personRepository.getFirestationsData();
         allFirestations.add(firestation);
         logger.debug("Create firestation number {} : {}", firestation.getStation(), firestation.getAddress());
@@ -27,7 +41,20 @@ public class EndpointFirestationService implements IEndpointFirestationService {
     }
 
     @Override
-    public Firestation update(Firestation firestation) {
+    public Firestation update(@NotNull Firestation firestation) {
+        if(firestation.getAddress() == null){
+            logger.error("Address provided is null");
+            throw new NullPointerException("Address provided is incorrect: " + firestation.getAddress());
+        }
+        if(firestation.getAddress().equals("")){
+            logger.error("Address provided is empty");
+            throw new IllegalArgumentException("Address provided is incorrect: " + firestation.getAddress());
+        }
+        if(firestation.getStation() < 0){
+            logger.error("Negative Station number provided");
+            throw new IllegalArgumentException("Station number provided is incorrect: " + firestation.getAddress());
+        }
+
         ArrayList<Firestation> allFirestations = personRepository.getFirestationsData();
         for (Firestation f : allFirestations) {
             if (Objects.equals(f.getAddress(), firestation.getAddress())) {
@@ -39,7 +66,20 @@ public class EndpointFirestationService implements IEndpointFirestationService {
     }
 
     @Override
-    public String delete(Firestation firestation) {
+    public String delete(@NotNull Firestation firestation) {
+        if(firestation.getAddress() == null){
+            logger.error("Address provided is null");
+            throw new NullPointerException("Address provided is incorrect: " + firestation.getAddress());
+        }
+        if(firestation.getAddress().equals("")){
+            logger.error("Address provided is empty");
+            throw new IllegalArgumentException("Address provided is incorrect: " + firestation.getAddress());
+        }
+        if(firestation.getStation() < 0){
+            logger.error("Negative Station number provided");
+            throw new IllegalArgumentException("Station number provided is incorrect: " + firestation.getAddress());
+        }
+
         ArrayList<Firestation> allFirestations = personRepository.getFirestationsData();
         ArrayList<Firestation> newFirestationsLIst = personRepository.getFirestationsData();
 

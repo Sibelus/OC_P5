@@ -4,6 +4,7 @@ import com.safetynet.api.model.Medicalrecord;
 import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,7 +19,24 @@ public class EndpointMedicalRecordService implements IEndpointMedicalRecordServi
     PersonRepository personRepository;
 
     @Override
-    public Medicalrecord create(Medicalrecord medicalrecord) {
+    public Medicalrecord create(@NotNull Medicalrecord medicalrecord) {
+        if(medicalrecord.getFirstName() == null){
+            logger.error("Firstname provided is null");
+            throw new NullPointerException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
+        }
+        if(medicalrecord.getFirstName().equals("")){
+            logger.error("Firstname provided is empty");
+            throw new IllegalArgumentException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
+        }
+        if(medicalrecord.getLastName() == null){
+            logger.error("Lastname provided is null");
+            throw new NullPointerException("Lastname provided is incorrect: " + medicalrecord.getLastName());
+        }
+        if(medicalrecord.getLastName().equals("")){
+            logger.error("Lastname provided is empty");
+            throw new IllegalArgumentException("Lastname provided is incorrect: " + medicalrecord.getLastName());
+        }
+
         ArrayList<Medicalrecord> allMedicalrecords = personRepository.getMedicalrecordsData();
         allMedicalrecords.add(medicalrecord);
         logger.debug("Create {}", medicalrecord);
@@ -28,12 +46,20 @@ public class EndpointMedicalRecordService implements IEndpointMedicalRecordServi
 
     @Override
     public Medicalrecord update(Medicalrecord medicalrecord) {
-        if(medicalrecord.getFirstName() == null || medicalrecord.getFirstName().equals("")){
-            logger.error("Firstname provided is null or empty");
+        if(medicalrecord.getFirstName() == null){
+            logger.error("Firstname provided is null");
+            throw new NullPointerException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
+        }
+        if(medicalrecord.getFirstName().equals("")){
+            logger.error("Firstname provided is empty");
             throw new IllegalArgumentException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
         }
-        if(medicalrecord.getLastName() == null || medicalrecord.getLastName().equals("")){
-            logger.error("Lastname provided is null or empty");
+        if(medicalrecord.getLastName() == null){
+            logger.error("Lastname provided is null");
+            throw new NullPointerException("Lastname provided is incorrect: " + medicalrecord.getLastName());
+        }
+        if(medicalrecord.getLastName().equals("")){
+            logger.error("Lastname provided is empty");
             throw new IllegalArgumentException("Lastname provided is incorrect: " + medicalrecord.getLastName());
         }
 
@@ -52,12 +78,20 @@ public class EndpointMedicalRecordService implements IEndpointMedicalRecordServi
 
     @Override
     public String delete(Medicalrecord medicalrecord) {
-        if(medicalrecord.getFirstName() == null || medicalrecord.getFirstName().equals("")){
-            logger.error("Firstname provided is null or empty");
+        if(medicalrecord.getFirstName() == null){
+            logger.error("Firstname provided is null");
+            throw new NullPointerException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
+        }
+        if(medicalrecord.getFirstName().equals("")){
+            logger.error("Firstname provided is empty");
             throw new IllegalArgumentException("Firstname provided is incorrect: " + medicalrecord.getFirstName());
         }
-        if(medicalrecord.getLastName() == null || medicalrecord.getLastName().equals("")){
-            logger.error("Lastname provided is null or empty");
+        if(medicalrecord.getLastName() == null){
+            logger.error("Lastname provided is null");
+            throw new NullPointerException("Lastname provided is incorrect: " + medicalrecord.getLastName());
+        }
+        if(medicalrecord.getLastName().equals("")){
+            logger.error("Lastname provided is empty");
             throw new IllegalArgumentException("Lastname provided is incorrect: " + medicalrecord.getLastName());
         }
 
