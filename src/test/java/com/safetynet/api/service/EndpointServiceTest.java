@@ -478,16 +478,6 @@ public class EndpointServiceTest {
     }
 
     @Test
-    public void testEndpointFirestationService_DeleteFirestation_NullAddress(){
-        //GIVEN
-        Firestation firestation = new Firestation();
-        firestation.setStation(1);
-
-        //THEN
-        Assertions.assertThrows(NullPointerException.class, ()-> endpointFirestationService.delete(firestation));
-    }
-
-    @Test
     public void testEndpointFirestationService_DeleteFirestation_EmptyAddress(){
         //GIVEN
         Firestation firestation = new Firestation();

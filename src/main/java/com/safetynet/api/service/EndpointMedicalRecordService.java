@@ -4,7 +4,6 @@ import com.safetynet.api.model.Medicalrecord;
 import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +18,7 @@ public class EndpointMedicalRecordService implements IEndpointMedicalRecordServi
     PersonRepository personRepository;
 
     @Override
-    public Medicalrecord create(@NotNull Medicalrecord medicalrecord) {
+    public Medicalrecord create(Medicalrecord medicalrecord) {
         if(medicalrecord.getFirstName() == null){
             logger.error("Firstname provided is null");
             throw new NullPointerException("Firstname provided is incorrect: " + medicalrecord.getFirstName());

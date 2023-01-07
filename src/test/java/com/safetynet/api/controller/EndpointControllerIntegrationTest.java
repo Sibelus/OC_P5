@@ -37,6 +37,7 @@ public class EndpointControllerIntegrationTest {
     public void integrationTest_EndpointPersonController_CreateNewPerson() throws Exception{
         Person person = new Person();
         person.setFirstName("Moctar");
+        person.setLastName("Tampion");
 
         mockMvc.perform(post("/person").content(asJsonString(person)).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
@@ -57,6 +58,8 @@ public class EndpointControllerIntegrationTest {
     @Test
     public void integrationTest_EndpointMedicalrecordController_CreateNewMedicalrecord() throws Exception{
         Medicalrecord medicalrecord = new Medicalrecord();
+        medicalrecord.setFirstName("Moctar");
+        medicalrecord.setLastName("Tampion");
         medicalrecord.setBirthdate("12/12/2012");
 
 

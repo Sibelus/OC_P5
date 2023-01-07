@@ -4,7 +4,6 @@ import com.safetynet.api.model.Firestation;
 import com.safetynet.api.repository.PersonRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -20,7 +19,7 @@ public class EndpointFirestationService implements IEndpointFirestationService {
     PersonRepository personRepository;
 
     @Override
-    public Firestation create(@NotNull Firestation firestation) {
+    public Firestation create(Firestation firestation) {
         if(firestation.getAddress() == null){
             logger.error("Address provided is null");
             throw new NullPointerException("Address provided is incorrect: " + firestation.getAddress());
@@ -41,7 +40,7 @@ public class EndpointFirestationService implements IEndpointFirestationService {
     }
 
     @Override
-    public Firestation update(@NotNull Firestation firestation) {
+    public Firestation update(Firestation firestation) {
         if(firestation.getAddress() == null){
             logger.error("Address provided is null");
             throw new NullPointerException("Address provided is incorrect: " + firestation.getAddress());
@@ -66,15 +65,14 @@ public class EndpointFirestationService implements IEndpointFirestationService {
     }
 
     @Override
-    public String delete(@NotNull Firestation firestation) {
-        if(firestation.getAddress() == null){
-            logger.error("Address provided is null");
-            throw new NullPointerException("Address provided is incorrect: " + firestation.getAddress());
+    public String delete(Firestation firestation) {
+        if (!Objects.isNull(firestation.getAddress())){
+            if(firestation.getAddress().equals("")){
+                logger.error("Address provided is empty");
+                throw new IllegalArgumentException("Address provided is incorrect: " + firestation.getAddress());
+            }
         }
-        if(firestation.getAddress().equals("")){
-            logger.error("Address provided is empty");
-            throw new IllegalArgumentException("Address provided is incorrect: " + firestation.getAddress());
-        }
+
         if(firestation.getStation() < 0){
             logger.error("Negative Station number provided");
             throw new IllegalArgumentException("Station number provided is incorrect: " + firestation.getAddress());
